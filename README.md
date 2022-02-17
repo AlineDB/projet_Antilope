@@ -1,6 +1,6 @@
 # projet_antillope
 
-Ce projet a pour but de dévelloper un site pour le projet antilope qui été fait par l'HEPL en collaboration avec l'ISSEP afin de calculer la pollution dans les différents endroits de la Belgique grace a plusieurs appareils de différentes tailles qui peuvent aller de la station fixe a l'appareil mobile (colier).
+Ce repository a pour but de développer un site pour le projet antilope qui a été demandé par l'ISSEP aux ingénieur de la HEPL afin de mesurer la pollution en Belgique grâce à différents types d'appareils mobiles ou fixes.
 
 ## Lien utiles
 
