@@ -1,9 +1,9 @@
 !.gitignore
 !readme.md
-!database.sql
+!antilope.sql
 
 !/wp-content
 /wp-content/*
 !/wp-content/themes
 /wp-content/themes/*
-!/wp-content/themes/portfolio
+!/wp-content/themes/antilope
