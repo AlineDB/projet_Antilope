@@ -52,4 +52,36 @@ Pinterest
   Pinterest
  [Pinterest](https://www.pinterest.fr/pin/422281207261728/)
  
+ Animaux et flore de la Savane
+ [Savane](https://monde-elephant.com/blogs/blog-monde-elephant/savane-africaine#:~:text=L'%C3%A9cosyst%C3%A8me%20de%20savane%20africaine,soleil%20d'atteindre%20le%20sol)
+ 
+ Colorimétrie
+ [Savane 1](https://palettesdecouleurs.com/tag/savane-couleur/)
+ [Savane 2](https://palettesdecouleurs.com/palette-de-couleurs-1707/)
+ 
+ 
+ Arbre savane
+ [Acacia](https://www.google.com/search?q=acacia+arbre+savane&tbm=isch&ved=2ahUKEwjTucmk55r2AhXJ1qQKHVWCCcUQ2-cCegQIABAA&oq=acacia+arbre&gs_lcp=CgNpbWcQARgDMgQIABBDMgQIABBDMgQIABBDMgQIABBDMgUIABCABDIFCAAQgAQyBQgAEIAEMgQIABBDMgUIABCABDIFCAAQgAQ6BwgjEO8DECdQ5BBY_ypgtUJoAHAAeAGAAY4CiAGyCZIBBjExLjEuMZgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=CcUYYpORN8mtkwXVhKaoDA&bih=714&biw=1536&rlz=1C1CHBF_frBE914BE914)
+ 
+ [Baobab](https://www.google.com/search?q=baobab+arbre+savane&tbm=isch&ved=2ahUKEwiKq7S355r2AhWaDWMBHVgmCkoQ2-cCegQIABAA&oq=baobab+arbre+savane&gs_lcp=CgNpbWcQAzIFCAAQgAQ6BwgjEO8DECc6BggAEAcQHlCzEliEHGDzIGgAcAB4AIABU4gB0ASSAQE4mAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=McUYYsrOGJqbjLsP2Myo0AQ&bih=714&biw=1536&rlz=1C1CHBF_frBE914BE914)
+ 
+ [candélabre](https://www.google.com/search?q=cand%C3%A9labre+arbre+savane&tbm=isch&ved=2ahUKEwjGx9PT55r2AhWHP-wKHSAgDZ4Q2-cCegQIABAA&oq=cand%C3%A9labre+arbre+savane&gs_lcp=CgNpbWcQAzoHCCMQ7wMQJzoECAAQQ1CglwJY9JkCYKifAmgAcAB4AIABU4gBnwKSAQE0mAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=bMUYYsbhJof_sAegwLTwCQ&bih=714&biw=1536&rlz=1C1CHBF_frBE914BE914)
+
+
+## Idée de noms
+
+savane / savannah
+respirer / breathe
+pollution / pollution
+mesure / measure
+air / air
+pur / clean
+laisser respire la savane / let the savannah breathe
+
+
+
+
+
+
+
 
