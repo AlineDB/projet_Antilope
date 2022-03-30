@@ -45,3 +45,29 @@ function dw_get_projects($count = 20)
 	// 2. on retourne l'objet WP_Query
 	return $dispositifs;
 }
+
+//enregistrer les zones de menus
+register_nav_menu('primary','Navigation principale (haut de page)');
+register_nav_menu('footer','Navigation principale (pied de page)');
+
+//fonction pour récupérer les éléments d'un menu sous forme d'un tableau d'objet
+function dw_get_menu_items($location){
+	$items = [];
+	//récupérer le menu WP pour $location
+	$locations = get_nav_menu_locations();
+	if(!($locations[$location] ?? null)){//si dans locations il y a une clé location (si n'existe pas = null)
+		return $items;
+	}
+	//récupérer tous les éléments du menu récupéré
+	$menu = $locations[$location];
+	$posts = wp_get_nav_menu_items($menu);
+
+	//formater chaque élément dans une instance de classe personnalisée. Boucler sur chaque post pour transformer le WP_post en une instance
+	//de notre classe perso et on va l'ajouter à $items sauf si sous menu à l'item parent
+	foreach($posts as $post){
+		$item = new PrimaryMenuItem($post);
+		//retourner un tableau d'éléments du menu formaté
+		$items[] = $item;
+	}
+	return $items;
+}
