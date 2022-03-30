@@ -1,0 +1,11 @@
+/*
+
+!.gitignore
+!readme.md
+!antilope.sql
+
+!/wp-content
+/wp-content/*
+!/wp-content/themes
+/wp-content/themes/*
+!/wp-content/themes/antilope
