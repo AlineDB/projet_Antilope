@@ -1,4 +1,6 @@
 <?php
+//charger les fichiers nécessaires
+require_once(__DIR__ . './Menus/PrimaryMenuItem.php');
 
 // Lancer la sessions PHP pour pouvoir passer des variables de page en page
 add_action('init', 'dw_start_session', 1);
@@ -31,6 +33,22 @@ register_post_type('Dispositifs', [
 	'rewrite' => ['slug' => 'dispositifs'],
 ]);
 
+// Enregistrer un  custom post-type pour les données du form
+register_post_type('message', [
+	'label' => 'Messages de contact',
+	'labels' => [
+		'name' => 'Messages de contact',
+		'singular_name' => 'Message de contact',
+	],
+	'description' => 'Les messages envoyés par le formulaire de contact',
+	'public' => false,
+	'show_ui' => true,
+	'menu_position' => 10,
+	'menu_icon' => 'dashicons-buddicons-pm',
+	'capabilities' => array('create-posts'=> false,),
+	'map_meta_cap' => true,
+]);
+
 // Récupérer les dispositifs via une requête Wordpress
 function dw_get_projects($count = 20)
 {
@@ -46,9 +64,10 @@ function dw_get_projects($count = 20)
 	return $dispositifs;
 }
 
+
 //enregistrer les zones de menus
 register_nav_menu('primary','Navigation principale (haut de page)');
-register_nav_menu('footer','Navigation principale (pied de page)');
+
 
 //fonction pour récupérer les éléments d'un menu sous forme d'un tableau d'objet
 function dw_get_menu_items($location){
