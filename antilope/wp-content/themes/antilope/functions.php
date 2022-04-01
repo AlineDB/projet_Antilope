@@ -1,6 +1,15 @@
 <?php
 //charger les fichiers nécessaires
 require_once(__DIR__ . './Menus/PrimaryMenuItem.php');
+require_once(__DIR__ . '/Forms/BaseFormController.php');
+require_once(__DIR__ . '/Forms/ContactFormController.php');
+require_once(__DIR__ . '/Forms/Sanitizers/BaseSanitizer.php');
+require_once(__DIR__ . '/Forms/Sanitizers/TextSanitizer.php');
+require_once(__DIR__ . '/Forms/Sanitizers/EmailSanitizer.php');
+require_once(__DIR__ . '/Forms/Validators/BaseValidator.php');
+require_once(__DIR__ . '/Forms/Validators/RequiredValidator.php');
+require_once(__DIR__ . '/Forms/Validators/EmailValidator.php');
+require_once(__DIR__ . '/Forms/Validators/AcceptedValidator.php');
 
 // Lancer la sessions PHP pour pouvoir passer des variables de page en page
 add_action('init', 'dw_start_session', 1);

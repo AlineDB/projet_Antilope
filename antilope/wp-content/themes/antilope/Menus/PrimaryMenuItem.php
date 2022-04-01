@@ -18,7 +18,7 @@ class PrimaryMenuItem
 	{
 		$modifiers = [];
 
-		$icon = get_field('icon', $this->post);
+		$icon = $this->get_field( 'icon', $this->post );
 
 		if($icon) {
 			$modifiers[] = $icon;
@@ -40,4 +40,5 @@ class PrimaryMenuItem
 
 		return $value;
 	}
+
 }
