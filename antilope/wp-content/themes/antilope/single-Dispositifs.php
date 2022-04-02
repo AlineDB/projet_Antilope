@@ -8,17 +8,6 @@
         <div class="singleDispositif__content">
 			<?=  the_content();  ?>
         </div>
-        <aside class="singleDispositif__details">
-            <h3 class="singleDispositif__subtitle">Détails du projet</h3>
-            <dl class="singleDispositif__def">
-                <dt class="singleDispositif__label">But</dt>
-                <dd class="singleDispositif__data">Lorem ipsum</dd>
-                <dt class="singleDispositif__label">Aspect technique</dt>
-                <dd class="singleDispositif__data">Lorem ipsum </dd>
-                <dt class="singleProjet__label">Résultats</dt>
-                <dd class="singleProjet__data">Lorem ipsum</dd>
-            </dl>
-        </aside>
     </main>
 <?php endwhile; endif; ?>
 

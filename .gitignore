@@ -1,0 +1,13 @@
+/*
+
+!.gitignore
+!README.md
+
+!antilope/wp-content
+antilope/wp-content/*
+!antilope/wp-content/themes
+antilope/wp-content/themes/*
+!antilope/wp-content/themes/antilope
+
+
+

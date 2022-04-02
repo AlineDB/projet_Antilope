@@ -99,3 +99,36 @@ function dw_get_menu_items($location){
 	}
 	return $items;
 }
+
+//gérer l'envoi de formulaire personnalisé
+
+add_action('admin_post_submit_contact_form', 'dw_handle_submit_contact_form');
+
+function dw_handle_submit_contact_form(){
+	// Instancier le controlleur du form
+	$form = new ContactFormController($_POST);
+}
+
+
+function dw_get_contact_field_value($field)
+{
+	if(! isset($_SESSION['contact_form_feedback'])) {
+		return '';
+	}
+
+	return $_SESSION['contact_form_feedback']['data'][$field] ?? '';
+}
+
+function dw_get_contact_field_error($field)
+{
+	if(! isset($_SESSION['contact_form_feedback'])) {
+		return '';
+	}
+
+	if(! ($_SESSION['contact_form_feedback']['errors'][$field] ?? null)) {
+		return '';
+	}
+
+	return '<p>Ce champ ne respecte pas : ' . $_SESSION['contact_form_feedback']['errors'][$field] . '</p>';
+}
+
