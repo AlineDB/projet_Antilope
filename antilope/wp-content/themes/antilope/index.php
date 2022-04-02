@@ -20,8 +20,8 @@
             </figure>
             <figure class="about__fig">
                 <img src="http://localhost/Antilope/antilope/wp-content/uploads/2022/04/pollution_pre-post_confinement_liege.jpg" alt="Graphique des mesures de pollution avent et après le confinement en 2020"
-                     srcset="/antilope/wp-content/uploads/2022/04/pollution_pre-post_confinement_liege-150x150.jpg 320w,
-                              /antilope/wp-content/uploads/2022/04/pollution_pre-post_confinement_liege-300x181.jpg  640w"
+                     srcset="../../uploads/2022/04/pollution_pre-post_confinement_liege-150x150.jpg 320w,
+                              ../../uploads/2022/04/pollution_pre-post_confinement_liege-300x181.jpg  640w"
                      sizes="100vw">
             </figure>
             <figure class="about__fig">
@@ -44,7 +44,7 @@
             </figure>
             <p>Ses chiffres sont interpellant ! Nos dispositifs permettent de mieux comprendre et mesurer la qualité de l'air dans nos villes peut importe quel moyen de locomotion on utilise !</p>
         </div>
-        <button class="but__button"><a href="./dispositifs">Voir les différents dispositifs</a></button>
+        <button class="but__button"><a href="#">Voir les différents dispositifs</a></button>
     </section>
     <section class="layout__qui">
         <h2 class="qui__title">Par qui ?</h2>
