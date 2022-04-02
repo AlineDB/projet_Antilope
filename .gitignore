@@ -1,13 +1,13 @@
 /*
 
 !.gitignore
-!README.md
+!readme.md
+!aline_portfolio.sql
 
-!antilope/wp-content
-antilope/wp-content/*
-!antilope/wp-content/themes
-antilope/wp-content/themes/*
-!antilope/wp-content/themes/antilope
-
+!/wp-content
+/wp-content/*
+!/wp-content/themes
+/wp-content/themes/*
+!/wp-content/themes/antilope
 
 
