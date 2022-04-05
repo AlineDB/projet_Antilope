@@ -42,6 +42,21 @@ register_post_type('Dispositifs', [
 	'rewrite' => ['slug' => 'dispositifs'],
 ]);
 
+// Enregistrer un seul custom post-type pour "Articles"
+register_post_type('Articles', [
+	'label' => 'Articles',
+	'labels' => [
+		'name' => 'Articles',
+		'singular_name' => 'Article',
+	],
+	'description' => 'Tous les Articles',
+	'public' => true,
+	'menu_position' => 5,
+	'menu_icon' => 'dashicons-category',
+	'supports' => ['title','editor','thumbnail'],
+	'rewrite' => ['slug' => 'articles'],
+]);
+
 // Enregistrer un  custom post-type pour les données du form
 register_post_type('message', [
 	'label' => 'Messages de contact',
@@ -71,6 +86,21 @@ function dw_get_projects($count = 20)
 
 	// 2. on retourne l'objet WP_Query
 	return $dispositifs;
+}
+
+// Récupérer les dispositifs via une requête Wordpress
+function dw_get_articles($count = 20)
+{
+	// 1. on instancie l'objet WP_Query
+	$articles = new WP_Query([
+		'post_type' => 'Articles',
+		'orderby' => 'date',
+		'order' => 'DESC',
+		'posts_per_page' => $count,
+	]);
+
+	// 2. on retourne l'objet WP_Query
+	return $articles;
 }
 
 

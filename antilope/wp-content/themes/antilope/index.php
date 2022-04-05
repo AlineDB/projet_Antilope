@@ -13,70 +13,68 @@
                 Nous proposons de montrer dans cette communication, les différentes variantes de nos modules ANTILOPE ainsi que de présenter les résultats des mesures faites en environnement contrôlé (matrice de gaz) ainsi que des mesures faites en environnement extérieur que nous confronterons avec les mesures réalisées par les appareils professionnels.
             </p>
             <figure class="about__fig">
-                <img src="../../uploads/2022/04/dispositis_logos.jpg" alt="Logos des différents dispositifs de mesure"
-                     srcset="../../uploads/2022/04/dispositis_logos-150x150.jpg 320w,
-                              ../../uploads/2022/04/dispositis_logos-300x140.jpg  640w"
-                     sizes="100vw">
+                <img src="<?php echo get_template_directory_uri().'/img/pollution_pre-post_confinement_liege.jpg'; ?>" alt="Graphique des mesures de pollution avent et après le confinement en 2020">
             </figure>
             <figure class="about__fig">
-                <img src="http://localhost/Antilope/antilope/wp-content/uploads/2022/04/pollution_pre-post_confinement_liege.jpg" alt="Graphique des mesures de pollution avent et après le confinement en 2020"
-                     srcset="../../uploads/2022/04/pollution_pre-post_confinement_liege-150x150.jpg 320w,
-                              ../../uploads/2022/04/pollution_pre-post_confinement_liege-300x181.jpg  640w"
-                     sizes="100vw">
+                <img src="<?php echo get_template_directory_uri().'/img/pollution_tueur_invisible.jpg'; ?>" alt="Illustration: la pollution tueur silencieux">
             </figure>
             <figure class="about__fig">
-                <img src="../../uploads/2022/04/pollution_tueur_invisible.jpg" alt="Illustration: la pollution tueur silencieux"
-                     srcset="../../uploads/2022/04/pollution_tueur_invisible-150x150.jpg 320w,
-                              ../../uploads/2022/04/pollution_tueur_invisible-300x207.jpg  640w"
-                     sizes="100vw">
+                <img src="<?php echo get_template_directory_uri().'/img/pollution_tueur_invisible_2.jpg'; ?>" alt="Illustration: la pollution tueur invisible">
             </figure>
             <figure class="about__fig">
-                <img src="../../uploads/2022/04/pollution_tueur_invisible_2.jpg" alt="Illustration: la pollution tueur invisible"
-                     srcset="../../uploads/2022/04/pollution_tueur_invisible_2-150x150.jpg 320w,
-                              ../../uploads/2022/04/pollution_tueur_invisible_2-300x244.jpg  640w"
-                     sizes="100vw">
-            </figure>
-            <figure class="about__fig">
-                <img src="../../uploads/2022/04/pollution_tueur_invisible_3.jpg" alt="Illustration: la pollution tueur invisible"
-                     srcset="../../uploads/2022/04/pollution_tueur_invisible_3-150x150.jpg 320w,
-                              ../../uploads/2022/04/pollution_tueur_invisible_3-300x250.jpg  640w"
-                     sizes="100vw">
+                <img src="<?php echo get_template_directory_uri().'/img/pollution_tueur_invisible_3.jpg'; ?>" alt="Illustration: la pollution tueur invisible">
             </figure>
             <p>Ses chiffres sont interpellant ! Nos dispositifs permettent de mieux comprendre et mesurer la qualité de l'air dans nos villes peut importe quel moyen de locomotion on utilise !</p>
         </div>
-        <button class="but__button"><a href="#">Voir les différents dispositifs</a></button>
+        <button class="but__button"><a href="http://localhost/Antilope/antilope/dispositifs">Voir les différents dispositifs</a></button>
     </section>
     <section class="layout__qui">
         <h2 class="qui__title">Par qui ?</h2>
         <div class="qui__container">
            <p> </p>
             <figure class="qui__fig">
-                <img src="../../uploads/2022/04/dispositis_logos.jpg" alt="Logos des différents dispositifs de mesure"
-                     srcset="../../uploads/2022/04/dispositis_logos-150x150.jpg 320w,
-                              ../../uploads/2022/04/dispositis_logos-300x140.jpg  640w"
-                     sizes="100vw">
+                <figcaption class="qui__legend">Les dispositifs développés en partenariat</figcaption>
+                <img src="<?php echo get_template_directory_uri().'/img/dispositis_logos.jpg'; ?>" alt="Logos des différents dispositifs de mesure">
+            </figure>
+            <figure class="qui__fig">
+                <figcaption class="qui__legend">L'ISSEP est une unité d'Aministration Publique qui surveille l'environnement,
+                prévient les risques et nuisances, effectue des recherches scientifique et Laboratoire de Référene pour la Wallonie.</figcaption>
+                <img src="<?php echo get_template_directory_uri().'/img/logo_ISSEP.jpg'; ?>" alt="Logo de l'ISSEP">
+            </figure>
+            <figure class="qui__fig">
+                <figcaption class="qui__legend">Le service électronique de la HEPL</figcaption>
+                <img src="<?php echo get_template_directory_uri().'/img/logo_electro.jpg'; ?>" alt="Logo du service électronique de la HEPL">
+            </figure>
+            <figure class="qui__fig">
+                <figcaption class="qui__legend">La HEPL et le cursus ingénierie</figcaption>
+                <img src="<?php echo get_template_directory_uri().'/img/logo_HEPL-150x60.jpg'; ?>" alt="Logo de la HEPL">
             </figure>
         </div>
-        <button class="but__button"><a href="./template-contact.php">Contact</a></button>
+        <button class="but__button"><a href="http://localhost/Antilope/antilope/contact">Contact</a></button>
     </section>
-    <section class="layout__articles">
-        <h2 class="articles__title">On parle de nous !</h2>
+    <section class="layout__articles articles">
+        <h2 class="articles__title">On parle de nous</h2>
         <div class="articles__container">
-            <ul class="articles__list">
-                <li class="articles__li">
-                    <a href="https://www.frontiersin.org/articles/10.3389/fsens.2021.679908/full">Article de Frontiere in Sensors (anglais)</a>
-                </li>
-                <li class="articles__li">
-                    <a href="https://lameuse.sudinfo.be/837371/article/2021-09-23/liege-va-mesurer-la-pollution-le-bruit-et-la-temperature-dans-tous-ses-quartiers">Article de La Meuse (Belgique)</a>
-                </li>
-                <li class="articles__li">
-                    <a href="https://www.youtube.com/watch?v=hOlzReqeewQ">Vidéo de France 3 (France)</a>
-                </li>
-            </ul>
+			<?php if(($articles = dw_get_articles(3))->have_posts()): while($articles->have_posts()): $articles->the_post(); ?>
+                <article class="article">
+                    <div class="article__card">
+                        <header class="article__head">
+                            <h3 class="article__title"><?= get_the_title(); ?></h3>
+                            <p class="article__date"><time class="article__time" datetime="<?= date('c', strtotime(get_field('date', false, false))); ?>">
+									<?= ucfirst(date_i18n('F, Y', strtotime(get_field('date', false, false)))); ?>
+                                </time></p>
+                        </header>
+                        <figure class="article__fig">
+							<?= get_the_post_thumbnail(null, 'medium_large', ['class' => 'project__thumb']); ?>
+                        </figure>
+                    </div>
+                    <a href="<?= get_the_permalink(); ?>" class="article__link">Voir l'article "<?= get_the_title(); ?>"</a>
+                </article>
+			<?php endwhile; else: ?>
+                <p class="articles__empty">Il n'y a pas d'articles à vous montrer...</p>
+			<?php endif; ?>
         </div>
     </section>
-
-
 
 </body>
 <?php get_footer(); ?>
