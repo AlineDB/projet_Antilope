@@ -18,7 +18,7 @@
 					</div>
 				</article>
 			<?php endwhile; else: ?>
-				<p class="articles__empty">Il n'y a pas de projets à vous montrer...</p>
+				<p class="articles__empty">Il n'y a pas d'articles à vous montrer...</p>
 			<?php endif; ?>
 		</div>
 	</section>

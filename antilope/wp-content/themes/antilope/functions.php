@@ -57,6 +57,7 @@ register_post_type('Articles', [
 	'rewrite' => ['slug' => 'articles'],
 ]);
 
+
 // Enregistrer un  custom post-type pour les données du form
 register_post_type('message', [
 	'label' => 'Messages de contact',

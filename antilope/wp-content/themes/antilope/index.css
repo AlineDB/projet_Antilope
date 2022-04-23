@@ -1,0 +1,12 @@
+body{
+    background-color: rosybrown;
+}
+
+h2{
+    font-size: 2em;
+    color: turquoise;
+}
+
+a{
+    cursor: pointer;
+}

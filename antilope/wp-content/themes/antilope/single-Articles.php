@@ -7,7 +7,7 @@
 			<?= get_the_post_thumbnail(null, 'thumbnail', ['class' => 'singleDispositif__thumb']); ?>
 		</figure>
 		<div class="singleArticle__content">
-			<?=  the_content();  ?>
+            <?=  the_content();  ?>
 		</div>
         <aside class="singleArticle__details">
             <h3 class="singleArticle__subtitle">Détails</h3>
