@@ -17,6 +17,14 @@
             <h3 class="singleDispositif__price"><?= get_field('prix',false, false) ?></h3>
             <a href="template-contact.php">Intéressé ? Contactez-nous !</a>
         </div>
+        <aside class="singleDispositif__aside">
+            <h3 class="aside__title">Catégories</h3>
+            <?php foreach (get_field('type', false, false) as $id_category): ?>
+            <p class="aside__contain">
+            <?= (get_cat_name($id_category)); ?>
+            <?php endforeach;?>
+            </p>
+        </aside>
     </main>
 <?php endwhile; endif; ?>
 

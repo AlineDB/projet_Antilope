@@ -6,7 +6,8 @@
 <head>
     <meta charset="utf-8">
     <title>Projet Antilope</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" type="text/css" href="<?= dw_mix('css/style.css'); ?>" />
+    <script type="text/javascript" src="<?= dw_mix('js/script.js'); ?>"></script>
     <meta name="description" content="Projet Antilope par Aline DE BARROS">
     <meta name="DE BARROS Aline">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,5 +27,11 @@
                 </a>
 				<?php endforeach; ?>
     </nav>
-
+    <form class="header__search search" role="search" method="get" action="<?= get_home_url(); ?>">
+        <div class="search__container">
+            <label for="s" class="search__label">Votre recherche</label>
+            <input type="text" name="s" id="s" class="search__input" value="<?= get_search_query(); ?>" />
+            <button type="submit" class="search__btn">Rechercher</button>
+        </div>
+    </form>
 </header>
