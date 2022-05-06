@@ -15,15 +15,15 @@
             <p class="singleDispositif__p"><?= get_field('contenu_resultats',false, false) ?></p>
             <img src="<?= get_field('image_resultats', false, false) ?>" alt="">
             <h3 class="singleDispositif__price"><?= get_field('prix',false, false) ?></h3>
-            <a href="template-contact.php">Intéressé ? Contactez-nous !</a>
+            <a href="template-contact.php"><?= __('Intéressé ? Contactez-nous!', 'Aline-db-antilope'); ?></a>
         </div>
         <aside class="singleDispositif__aside">
-            <h3 class="aside__title">Catégories</h3>
-            <?php foreach (get_field('type', false, false) as $id_category): ?>
+            <h3 class="aside__title"><?= __('Types', 'Aline-db-antilope'); ?></h3>
+        <!--   <?php /*foreach (get_field('type') as $type): */?>
             <p class="aside__contain">
-            <?= (get_cat_name($id_category)); ?>
-            <?php endforeach;?>
+            <?/*= (get_field($type)); */?>
             </p>
+            <?php /*endforeach;*/?>-->
         </aside>
     </main>
 <?php endwhile; endif; ?>

@@ -6,7 +6,7 @@
 <main class="layout">
 
 <section class="layout__but">
-    <h2 class="but__title">Dans quel but ?</h2>
+    <h2 class="but__title"><?= __('Dans quel but ?', 'Aline-db-antilope'); ?></h2>
     <div class="but__container">
         <p class="but__description">En 2020, nul ne peut ignorer les problèmes de pollution. Les dernières études publiées par l’OMS (Organisation Mondiale de la Santé) montrent que plus de 90% de la population mondiale est exposée à un air extérieur toxique. Cette pollution est même devenue une urgence de santé publique.  Une récente analyse montre même que 7 millions de décès prématurés surviennent chaque année à cause de la pollution de l'air. Ces statistiques en font une cause plus meurtrière que le tabagisme. L'impact des différents polluants sur de nombreuses maladies reste encore à établir, ce qui suggère que les dommages cardiaques et pulmonaires connus ne sont que "la partie émergée de l'iceberg".
             C’est dans cette optique la que nous proposons un système low-cost de mesure des polluants atmosphériques tel que les oxydes d’azote (NO&NO2), ozone (O3) et les particules fines (PM 2.5).  Ce système de mesure, appelé ANTILOPE, est basé sur une approche « low cost » et se distingue donc des autres appareils du marché.
@@ -27,14 +27,14 @@
         </figure>
         <p>Ses chiffres sont interpellant ! Nos dispositifs permettent de mieux comprendre et mesurer la qualité de l'air dans nos villes peut importe quel moyen de locomotion on utilise !</p>
     </div>
-    <a href="http://localhost/Antilope/antilope/dispositifs">Voir les différents dispositifs</a>
+    <a href="http://localhost/Antilope/antilope/dispositifs"><?= __('Voir les différents dispositifs', 'Aline-db-antilope'); ?></a>
 </section>
 <section class="layout__qui">
-    <h2 class="qui__title">Par qui ?</h2>
+    <h2 class="qui__title"><?= __('Par qui ?', 'Aline-db-antilope'); ?></h2>
     <div class="qui__container">
         <p> </p>
         <figure class="qui__fig">
-            <figcaption class="qui__legend">Les dispositifs développés en partenariat</figcaption>
+            <figcaption class="qui__legend"><?= __('Les dispositifs développés en partenariat', 'Aline-db-antilope'); ?></figcaption>
             <img src="<?php echo get_template_directory_uri().'/img/dispositis_logos.jpg'; ?>" alt="Logos des différents dispositifs de mesure">
         </figure>
         <figure class="qui__fig">
@@ -51,7 +51,7 @@
             <img src="<?php echo get_template_directory_uri().'/img/logo_HEPL-150x60.jpg'; ?>" alt="Logo de la HEPL">
         </figure>
     </div>
-    <a href="http://localhost/Antilope/antilope/contact">Contact</a>
+    <a href="http://localhost/Antilope/antilope/contact"><?= __('Contact', 'Aline-db-antilope'); ?></a>
 </section>
 
 </body>

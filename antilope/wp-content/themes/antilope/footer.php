@@ -3,7 +3,7 @@
 
 ?>
 <footer class="footer">
-    <h2 class="footer__title">Pied de page</h2>
+    <h2 class="footer__title"><?= __('Pied de page', 'Aline-db-antilope'); ?></h2>
     <div class="footer__container">
         <ul class="footer__list">
             <li class="footer__li">
@@ -14,6 +14,12 @@
             </li>
             <li class="footer__li">
                 <a href="https://www.hepl.be/fr/formations"><img src="<?php echo get_template_directory_uri().'/img/logo_HEPL-150x60.jpg'; ?>" alt="Logo de la HEPL" width="100" height="60"></a>
+            </li>
+        </ul>
+        <ul class="footer__legal">
+            <li>
+                <a href="http://localhost/Antilope/antilope/politique-de-confidentialite/">  <?= __('Mentions légales', 'Aline-db-antilope'); ?></a>
+
             </li>
         </ul>
     </div>

@@ -5,24 +5,24 @@
 
 <main class="layout">
     <section class="layout__about about">
-        <h2 class="about_title">Pourquoi et par qui ?</h2>
+        <h2 class="about_title"><?= __('Pourquoi et par qui ?', 'Aline-db-antilope'); ?></h2>
         <div class="about__container">
-            <a href="http://localhost/Antilope/antilope/presentation/">Quel est le but du projet ? Qui y participe ?</a>
+            <a href="http://localhost/Antilope/antilope/presentation/"><?= __('Lire la présentation', 'Aline-db-antilope'); ?></a>
         </div>
     </section>
     <section class="layout__dispositifs dispositifs">
-        <h2 class="dispositifs_title">Nos dispositifs</h2>
+        <h2 class="dispositifs_title"><?= __('Nos dispositifs', 'Aline-db-antilope'); ?></h2>
         <div class="dispositifs__container">
             <figure class="dispositifs__fig">
-                <figcaption class="dispositifs__legend">Les dispositifs développés en partenariat</figcaption>
+                <figcaption class="dispositifs__legend"><?= __('Les dispositifs développés en partenariat', 'Aline-db-antilope'); ?></figcaption>
                 <img src="<?php echo get_template_directory_uri().'/img/dispositis_logos.jpg'; ?>" alt="Logos des différents dispositifs de mesure">
             </figure>
-            <a href="http://localhost/Antilope/antilope/dispositifs/">Voir nos différents projets</a>
+            <a href="http://localhost/Antilope/antilope/dispositifs/"><?= __('Voir nos différents projets', 'Aline-db-antilope'); ?></a>
         </div>
     </section>
 
     <section class="layout__articles articles">
-        <h2 class="articles__title">On parle de nous</h2>
+        <h2 class="articles__title"><?= __('On parle de nous', 'Aline-db-antilope'); ?></h2>
         <div class="articles__container">
 			<?php if(($articles = dw_get_articles(3))->have_posts()): while($articles->have_posts()): $articles->the_post(); ?>
                 <article class="article">
@@ -37,10 +37,10 @@
 							<?= get_the_post_thumbnail(null, 'medium_large', ['class' => 'project__thumb']); ?>
                         </figure>
                     </div>
-                    <a href="<?= get_the_permalink(); ?>" class="article__link">Voir l'article "<?= get_the_title(); ?>"</a>
+                    <a href="<?= get_the_permalink(); ?>" class="article__link"><?= __('Voir l\'article', 'Aline-db-antilope'); ?> "<?= get_the_title(); ?>"</a>
                 </article>
 			<?php endwhile; else: ?>
-                <p class="articles__empty">Il n'y a pas d'articles à vous montrer...</p>
+                <p class="articles__empty"><?= __('Il n\'y a pas d\'articles à vous monter ...', 'Aline-db-antilope'); ?></p>
 			<?php endif; ?>
         </div>
     </section>

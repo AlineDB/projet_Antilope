@@ -10,17 +10,18 @@
             <?=  the_content();  ?>
 		</div>
         <aside class="singleArticle__details">
-            <h3 class="singleArticle__subtitle">Détails</h3>
+            <h3 class="singleArticle__subtitle"><?= __('Détails', 'Aline-db-antilope'); ?></h3>
             <dl class="singleArticle__def">
-                <dt class="singleArticle__label">Date de l'article</dt>
+                <dt class="singleArticle__label"><?= __('Date de l\'article', 'Aline-db-antilope'); ?></dt>
                 <dd class="singleArticle__data">
                     <time class="singleArticle__date" datetime="<?= date('c', strtotime(get_field('date', false, false))); ?>">
 						<?= ucfirst(date_i18n('d F Y', strtotime(get_field('date', false, false)))); ?>
                     </time></dd>
 				<?php if(get_field('source')):  ?>
-                    <dt class="singleArticle__label">Source</dt>
+                    <dt class="singleArticle__label"><?= __('Source', 'Aline-db-antilope'); ?></dt>
                     <dd class="singleArticle"><?= get_field('source', false, false);  ?>
                     </dd>
+<!--                //récupérer le read more-->
 				<?php endif; ?>
 	</main>
 <?php endwhile; endif; ?>

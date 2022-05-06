@@ -12,10 +12,11 @@ require_once(__DIR__ . '/Forms/Validators/EmailValidator.php');
 require_once(__DIR__ . '/Forms/Validators/AcceptedValidator.php');
 
 // Lancer la sessions PHP pour pouvoir passer des variables de page en page
-add_action('init', 'dw_start_session', 1);
+add_action('init', 'dw_boot_theme', 1);
 
-function dw_start_session()
+function dw_boot_theme()
 {
+    load_theme_textdomain('Aline-db-antilope', __DIR__ . '/locales');
 	if (! session_id()) {
 		session_start();
 	}
@@ -141,27 +142,7 @@ function dw_handle_submit_contact_form(){
 }
 
 
-function dw_get_contact_field_value($field)
-{
-	if(! isset($_SESSION['contact_form_feedback'])) {
-		return '';
-	}
 
-	return $_SESSION['contact_form_feedback']['data'][$field] ?? '';
-}
-
-function dw_get_contact_field_error($field)
-{
-	if(! isset($_SESSION['contact_form_feedback'])) {
-		return '';
-	}
-
-	if(! ($_SESSION['contact_form_feedback']['errors'][$field] ?? null)) {
-		return '';
-	}
-
-	return '<p>Ce champ ne respecte pas : ' . $_SESSION['contact_form_feedback']['errors'][$field] . '</p>';
-}
 
 // Fonction qui charge les assets compilés et retourne leure chemin absolu
 
@@ -188,4 +169,5 @@ function dw_mix($path)
     // Récupérer & retourner le chemin versionné
     return get_stylesheet_directory_uri() . '/public' . $manifest[$path];
 }
+
 

@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 
 <section class="layout__dispositifs dispositifs">
-	<h2 class="dispositifs__title">Les dispositifs de mesures</h2>
+	<h2 class="dispositifs__title"><?= __('Les dispositifs', 'Aline-db-antilope'); ?></h2>
 	<div class="dispositifs__container">
 		<?php if(($dispositifs = dw_get_projects(300))->have_posts()): while($dispositifs->have_posts()): $dispositifs->the_post(); ?>
 			<article class="dispositif">
@@ -14,11 +14,11 @@
 					<figure class="dispositifs__fig">
                         <?= get_the_post_thumbnail(null, 'post-thumbnail', ['class' => 'dispositifs__thumb']); ?>
 					</figure>
-                    <a href="<?= get_the_permalink(); ?>" class="dispositif__link">Voir le projet <?= get_the_title(); ?> en détails</a>
+                    <a href="<?= get_the_permalink(); ?>" class="dispositif__link"><?= __('Voir le projet', 'Aline-db-antilope'); ?> <?= get_the_title(); ?> en détails</a>
 				</div>
 			</article>
 		<?php endwhile; else: ?>
-			<p class="dispositifs__empty">Il n'y a pas de projets à vous montrer...</p>
+			<p class="dispositifs__empty"><?= __('Il n\'y a pas de projet à vous monter ...', 'Aline-db-antilope'); ?></p>
 		<?php endif; ?>
 	</div>
 </section>
