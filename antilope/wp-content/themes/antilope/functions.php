@@ -22,6 +22,8 @@ function dw_boot_theme()
 	}
 }
 
+
+
 // désactive l'éditeur Gutenberg dans wordpress
 add_filter('use_block_editor_for_post', '__return_false');
 
