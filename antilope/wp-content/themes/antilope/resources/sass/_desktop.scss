@@ -3,8 +3,33 @@
 
 
 @media screen and (min-width: 1024px) {
-
-
+/*header*/
+  header{
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+  .nav__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: end;
+    gap: 20px;
+  }
+  .header__tagline{
+    grid-row: 3;
+  }
+  .header__search{
+    justify-self: end;
+    grid-row: 3;
+  }
+  .header__title{
+    grid-row: 2;
+  }
+  .nav__item{
+    grid-column: 2;
+  }
 
   /*about*/
 

@@ -51,6 +51,7 @@ h3{
 
 footer{
   background-color: #C58339;
+  margin-top: 1.5625em;
 }
 
 .nav__title, .footer__title{
@@ -88,10 +89,7 @@ footer{
   line-height: 20px;
 }
 
-.layout{
-  margin: 0 15px; /*fix for all the device*/
-}
 
-.singleArticle__fig, .dispositifs__fig{
+.singleArticle__fig, .dispositifs__fig, .singleArticle__content{
   margin-bottom: 1.5625em;
 }
