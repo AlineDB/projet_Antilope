@@ -25,18 +25,29 @@
         <figure class="about__fig">
             <img src="<?php echo get_template_directory_uri().'/img/pollution_tueur_invisible_3.jpg'; ?>" alt="Illustration: la pollution tueur invisible">
         </figure>
-        <p>Ses chiffres sont interpellant ! Nos dispositifs permettent de mieux comprendre et mesurer la qualité de l'air dans nos villes peut importe quel moyen de locomotion on utilise !</p>
+        <p class="but__description">Ses chiffres sont interpellant ! Nos dispositifs permettent de mieux comprendre et mesurer la qualité de l'air dans nos villes peut importe quel moyen de locomotion on utilise !</p>
     </div>
     <a href="http://localhost/Antilope/antilope/dispositifs"><?= __('Voir les différents dispositifs', 'Aline-db-antilope'); ?></a>
 </section>
 <section class="layout__qui">
     <h2 class="qui__title"><?= __('Par qui ?', 'Aline-db-antilope'); ?></h2>
     <div class="qui__container">
-        <p> </p>
-        <figure class="qui__fig">
-            <figcaption class="qui__legend"><?= __('Les dispositifs développés en partenariat', 'Aline-db-antilope'); ?></figcaption>
-            <img src="<?php echo get_template_directory_uri().'/img/dispositis_logos.jpg'; ?>" alt="Logos des différents dispositifs de mesure">
-        </figure>
+            <?php if(($dispositifs = dw_get_projects(10))->have_posts()): while($dispositifs->have_posts()): $dispositifs->the_post(); ?>
+                <article class="dispositif">
+                    <div class="dispositif__card">
+                        <header class="dispositif__head">
+                            <h3 class="dispositif__title"><?= get_the_title(); ?></h3>
+                            <p class="dispositifs__"></p>
+                        </header>
+                        <figure class="dispositifs__fig">
+                            <?= get_the_post_thumbnail(null, 'post-thumbnail', ['class' => 'dispositifs__thumb']); ?>
+                        </figure>
+                        <a href="<?= get_the_permalink(); ?>" class="dispositif__link"><?= __('Voir le projet', 'Aline-db-antilope'); ?> <?= get_the_title(); ?> en détails</a>
+                    </div>
+                </article>
+            <?php endwhile; else: ?>
+                <p class="dispositifs__empty"><?= __('Il n\'y a pas de projet à vous monter ...', 'Aline-db-antilope'); ?></p>
+            <?php endif; ?>
         <figure class="qui__fig">
             <figcaption class="qui__legend">L'ISSEP est une unité d'Aministration Publique qui surveille l'environnement,
                 prévient les risques et nuisances, effectue des recherches scientifique et Laboratoire de Référene pour la Wallonie.</figcaption>

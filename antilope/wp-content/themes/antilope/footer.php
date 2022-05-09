@@ -19,7 +19,9 @@
         <ul class="footer__legal">
             <li>
                 <a href="http://localhost/Antilope/antilope/politique-de-confidentialite/">  <?= __('Mentions légales', 'Aline-db-antilope'); ?></a>
-
+            </li>
+            <li>
+                <a href="http://localhost/Antilope/antilope/template-contact/">Contact</a>
             </li>
         </ul>
     </div>

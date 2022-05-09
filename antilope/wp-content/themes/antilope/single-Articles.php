@@ -9,6 +9,7 @@
 		<div class="singleArticle__content">
             <?=  the_content();  ?>
 		</div>
+        <a class="singleArticle__link" href="<?= get_permalink() ;?>">Lire à la source</a>
         <aside class="singleArticle__details">
             <h3 class="singleArticle__subtitle"><?= __('Détails', 'Aline-db-antilope'); ?></h3>
             <dl class="singleArticle__def">

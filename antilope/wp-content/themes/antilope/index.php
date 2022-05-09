@@ -7,17 +7,29 @@
     <section class="layout__about about">
         <h2 class="about_title"><?= __('Pourquoi et par qui ?', 'Aline-db-antilope'); ?></h2>
         <div class="about__container">
-            <a href="http://localhost/Antilope/antilope/presentation/"><?= __('Lire la présentation', 'Aline-db-antilope'); ?></a>
+            <p class="about__description">Antilope est un dispositif de mesure créé à la demande de l'ISSEP par des étudiants ingénieurs de la HEPL et son service électronique. Leur but étant de mesurer la qualité de l'air à l'aide de différents modules en Wallonie.</p>
+            <a href="http://localhost/Antilope/antilope/presentation/" class="about__link"><?= __('Lire la présentation', 'Aline-db-antilope'); ?></a>
         </div>
     </section>
     <section class="layout__dispositifs dispositifs">
         <h2 class="dispositifs_title"><?= __('Nos dispositifs', 'Aline-db-antilope'); ?></h2>
         <div class="dispositifs__container">
-            <figure class="dispositifs__fig">
-                <figcaption class="dispositifs__legend"><?= __('Les dispositifs développés en partenariat', 'Aline-db-antilope'); ?></figcaption>
-                <img src="<?php echo get_template_directory_uri().'/img/dispositis_logos.jpg'; ?>" alt="Logos des différents dispositifs de mesure">
-            </figure>
-            <a href="http://localhost/Antilope/antilope/dispositifs/"><?= __('Voir nos différents projets', 'Aline-db-antilope'); ?></a>
+            <?php if(($dispositifs = dw_get_projects(10))->have_posts()): while($dispositifs->have_posts()): $dispositifs->the_post(); ?>
+                <article class="dispositif">
+                    <div class="dispositif__card">
+                        <header class="dispositif__head">
+                            <h3 class="dispositif__title"><?= get_the_title(); ?></h3>
+                            <p class="dispositifs__"></p>
+                        </header>
+                        <figure class="dispositifs__fig">
+                            <?= get_the_post_thumbnail(null, 'post-thumbnail', ['class' => 'dispositifs__thumb']); ?>
+                        </figure>
+                        <a href="<?= get_the_permalink(); ?>" class="dispositif__link"><?= __('Voir le projet', 'Aline-db-antilope'); ?> <?= get_the_title(); ?> en détails</a>
+                    </div>
+                </article>
+            <?php endwhile; else: ?>
+                <p class="dispositifs__empty"><?= __('Il n\'y a pas de projet à vous monter ...', 'Aline-db-antilope'); ?></p>
+            <?php endif; ?>
         </div>
     </section>
 
@@ -33,11 +45,11 @@
 									<?= ucfirst(date_i18n('F, Y', strtotime(get_field('date', false, false)))); ?>
                                 </time></p>
                         </header>
-                        <figure class="article__fig">
-							<?= get_the_post_thumbnail(null, 'medium_large', ['class' => 'project__thumb']); ?>
-                        </figure>
+                        <div class="singleArticle__content">
+                            <?=  the_content();  ?>
+                        </div>
                     </div>
-                    <a href="<?= get_the_permalink(); ?>" class="article__link"><?= __('Voir l\'article', 'Aline-db-antilope'); ?> "<?= get_the_title(); ?>"</a>
+                    <a href="<?= get_the_permalink(); ?>" class="article__link"><?= __('Lire l\'article en détails', 'Aline-db-antilope'); ?></a>
                 </article>
 			<?php endwhile; else: ?>
                 <p class="articles__empty"><?= __('Il n\'y a pas d\'articles à vous monter ...', 'Aline-db-antilope'); ?></p>
