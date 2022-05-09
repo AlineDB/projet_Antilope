@@ -13,7 +13,7 @@ Dans ce repository, vous trouverez les différents composants pour le site ainsi
 
 [Wireframes / Personas / tests utilisateurs](https://github.com/AlineDB/projet_Antilope/tree/main/Doc/wiframe)
 
-![](C:\wamp64\2\www\Antilope\Doc\design\accueil.png "page d'accueil")
+
 
 
 
