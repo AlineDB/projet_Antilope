@@ -1,0 +1,108 @@
+/*fonts, colors et sizes basics*/
+
+
+h1, h2, h3, footer, .nav__container, .dispositif__title{
+  font-family: 'Gothic Joker', serif;
+}
+
+html{
+  font-family: "Modern No. 20", serif;
+}
+
+.nav__container a, footer a{
+  color: #FFFFFF;
+  font-size: 3.75em; /*60/16*/
+}
+
+.nav__container a:hover, footer a:hover{
+  font-size: 4.0625em;
+  color: #C58339;
+  background-color: #FFFFFF;
+}
+
+.header{
+background-image: url("../../img/pexels-pixabay-221012.jpg");
+  background-position: center;
+  color: #FFFFFF;
+  height: 31.25em; /*500*/
+}
+
+h1{
+  color: #FFFFFF;
+  font-size: 4em;
+}
+
+h2{
+  color: #C58339;
+  font-size: 3.75em; /*60/16*/
+  margin: 0.75em 5px; /*45/60*/
+
+}
+
+h3{
+  color: #ABABAA;
+  font-size: 35px;
+  margin: 1.5625em 0px 0.75em 0; /*25/16  12/16*/
+}
+
+.dispositif__title{
+  font-size: 1.875em; /*30/16*/
+}
+
+footer{
+  background-color: #C58339;
+  margin-top: 1.5625em;
+}
+
+.nav__title, .footer__title{
+  display: none;
+}
+
+/*links and buttons*/
+
+.dispositif__link, .article__link, .singleDispositif__link, .form__button, .about__link, .singleArticle__link, .articles__link{
+  background-color: #FB9A2E;
+  color: #FFFFFF;
+  padding: 0.5em;
+  margin: 1.5625em 0.5em; /*25/16*/
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  border: none;
+}
+
+
+.dispositif__link:hover, .article__link:hover, .singleDispositif__link:hover, .form__button:hover, .about__link:hover, .singleArticle__link:hover, .articles__link:hover{
+  background-color: #FFFFFF;
+  color: #FB9A2E;
+  border: 1px solid #FB9A2E;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+}
+
+.header__search input{
+  background-color: #FFFFFF;
+  color: #FB9A2E;
+  border: 1px solid #FB9A2E;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+}
+
+/*text layout basic*/
+
+.search__label{
+ display: none;
+}
+
+.about__description, .but__description, .qui__legend{
+  max-width: 700px;
+  margin-bottom: 1.5625em;
+  line-height: 20px;
+}
+
+
+.singleArticle__fig, .dispositifs__fig, .singleArticle__content{
+  margin-bottom: 1.5625em;
+}

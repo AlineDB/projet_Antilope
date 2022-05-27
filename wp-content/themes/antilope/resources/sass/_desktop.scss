@@ -1,0 +1,44 @@
+
+
+
+
+@media screen and (min-width: 1024px) {
+/*header*/
+  header{
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+  .nav__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: end;
+    gap: 20px;
+  }
+  .header__tagline{
+    grid-row: 2;
+    justify-self: end;
+    font-size: 1.5em;
+  }
+  .header__search{
+    justify-self: end;
+    grid-row: 3;
+    grid-column: 2;
+  }
+  h1{
+    justify-self: end;
+    align-self: end;
+  }
+
+
+  /*about*/
+
+  .about__description{
+    margin-left: 6.25em; /*100/16*/
+  }
+
+
+}
+
