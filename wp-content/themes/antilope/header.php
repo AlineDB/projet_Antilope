@@ -18,7 +18,13 @@
     <h1 class="header__title"><?= get_bloginfo('name'); ?></h1>
     <p class="header__tagline"><?= get_bloginfo('description'); ?></p>
 
+    <input id="toggle" type="checkbox">
 
+    <label for="toggle" class="hamburger">
+        <div class="top-bun"></div>
+        <div class="meat"></div>
+        <div class="bottom-bun"></div>
+    </label>
 
     <nav class="header__nav nav">
             <h2 class="nav__title"><?= __('Navigation principale', 'Aline-db-antilope'); ?></h2>
