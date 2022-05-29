@@ -1,6 +1,7 @@
 <?php /* Template Name: Articles page template */ ?>
 <?php get_header(); ?>
 
+
 	<section class="layout__articles articles">
 		<h2 class="articles__title"><?= __('Les articles', 'Aline-db-antilope'); ?></h2>
 		<div class="articles__container">
@@ -20,9 +21,11 @@
 			<?php endwhile; else: ?>
 				<p class="articles__empty"><?= __('Il n\'y a pas d\'articles à vous monter ...', 'Aline-db-antilope'); ?></p>
 			<?php endif; ?>
+
 		</div>
 	</section>
 
+<?php wp_pagenavi( array( 'type' => 'multipart' ) ); ?>
 
 
 <?php get_footer(); ?>

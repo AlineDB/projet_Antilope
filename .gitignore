@@ -2,7 +2,7 @@
 
 !.gitignore
 !readme.md
-!aline_portfolio.sql
+!antilope.sql
 !package.json
 !package-lock.json
 !webpack.mix.js

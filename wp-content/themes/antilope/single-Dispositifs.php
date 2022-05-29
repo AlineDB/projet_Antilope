@@ -18,15 +18,18 @@
             <a href="template-contact.php" class="singleDispositif__link"><?= __('Intéressé ? Contactez-nous!', 'Aline-db-antilope'); ?></a>
         </div>
         <aside class="singleDispositif__aside">
-            <h3 class="aside__title"><?= __('Types', 'Aline-db-antilope'); ?></h3>
-        <!--   <?php /*foreach (get_field('type') as $type): */?>
-            <p class="aside__contain">
-            <?/*= (get_field($type)); */?>
-            </p>
-            <?php /*endforeach;*/?>-->
+		        <?php if(get_field('type')):  ?>
+                    <h3 class="aside__title"><?= __('Catégorie(s)', 'Aline-db-portfolio'); ?></h3>
+                        <ul class="aside__categoryList">
+	                        <?php foreach (get_field('type', false, false) as $id_category): ?>
+                                <li class="aside__li"><?php echo(get_cat_name($id_category)); ?></li>
+	                        <?php endforeach;?>
+                        </ul>
+		        <?php endif; ?>
         </aside>
     </main>
 <?php endwhile; endif; ?>
+
 
 
 

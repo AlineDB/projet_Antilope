@@ -58,6 +58,10 @@ footer{
   display: none;
 }
 
+.header__nav input[type="checkbox"], .hamburger-lines {
+  display: none;
+}
+
 /*links and buttons*/
 
 .dispositif__link, .article__link, .singleDispositif__link, .form__button, .about__link, .singleArticle__link, .articles__link{

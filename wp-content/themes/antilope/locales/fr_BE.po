@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Antilope\n"
 "POT-Creation-Date: 2022-05-06 20:30+0200\n"
-"PO-Revision-Date: 2022-05-06 20:31+0200\n"
+"PO-Revision-Date: 2022-05-29 14:15+0200\n"
 "Last-Translator: \n"
 "Language-Team: alinedebarros@hotmail.fr\n"
 "Language: fr_BE\n"
@@ -94,15 +94,15 @@ msgstr "Les articles"
 
 #: template-Articles.php:9
 msgid "Lire le récit de voyage \":title\""
-msgstr "Lire "
+msgstr "Lire"
 
 #: template-Dispositifs.php:5
 msgid "Les dispositifs"
-msgstr "Nos dispositifs"
+msgstr "Les dispositifs"
 
 #: template-Dispositifs.php:17
 msgid "Voir le projet"
-msgstr "Voir nos différents projets"
+msgstr "Voir le projet"
 
 #: template-Dispositifs.php:21
 msgid "Il n'y a pas de projet à vous monter ..."
@@ -110,7 +110,7 @@ msgstr "Il n'y a pas de projet à vous monter ..."
 
 #: template-Presentation.php:9
 msgid "Dans quel but ?"
-msgstr "For what purpose?"
+msgstr "Dans quel but ?"
 
 #: template-Presentation.php:30
 msgid "Voir les différents dispositifs"

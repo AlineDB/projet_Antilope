@@ -20,9 +20,11 @@
 		<?php endwhile; else: ?>
 			<p class="dispositifs__empty"><?= __('Il n\'y a pas de projet à vous monter ...', 'Aline-db-antilope'); ?></p>
 		<?php endif; ?>
+
 	</div>
 </section>
 
 
+<?php wp_pagenavi( array( 'type' => 'multipart' ) ); ?>
 
 <?php get_footer(); ?>

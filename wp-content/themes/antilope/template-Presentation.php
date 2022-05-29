@@ -55,7 +55,7 @@
         </figure>
         <figure class="qui__fig">
             <figcaption class="qui__legend">Le service électronique de la HEPL</figcaption>
-            <img src="<?php echo get_template_directory_uri().'/img/logo_electro.jpg'; ?>" alt="Logo du service électronique de la HEPL">
+            <img src="<?php echo get_template_directory_uri().'/img/logo_electro.png'; ?>" alt="Logo du service électronique de la HEPL">
         </figure>
         <figure class="qui__fig">
             <figcaption class="qui__legend">La HEPL et le cursus ingénierie</figcaption>

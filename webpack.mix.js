@@ -18,7 +18,7 @@ mix.setPublicPath('./wp-content/themes/antilope/public')
         processCssUrls: false
     })
     .browserSync({
-        proxy: 'http://localhost/Antilope/antilope/',
+        proxy: 'http://localhost:8888/Antilope/antilope/',
         notify: false
     })
     .version();
