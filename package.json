@@ -1,5 +1,8 @@
 {
-  "private": true,
+  "name": "antilope_template",
+  "version": "1.0.0",
+  "description": "Template for docker environment",
+  "main": "index.js",
   "scripts": {
     "dev": "npm run development",
     "development": "mix",
@@ -9,16 +12,19 @@
     "prod": "npm run production",
     "production": "mix --production"
   },
+  "keywords": [],
+  "author": "Aline",
+  "license": "ISC",
   "devDependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.8.3",
-    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.8.3",
-    "axios": "^0.21",
-    "browser-sync": "^2.26.7",
-    "browser-sync-webpack-plugin": "^2.0.1",
-    "cross-env": "^7.0",
-    "laravel-mix": "^6.0.1",
-    "resolve-url-loader": "^3.1.0",
-    "sass": "^1.38.2",
-    "sass-loader": "^12.1.0"
-  }
+    "browser-sync": "^2.27.7",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "cross-env": "^6.0.3",
+    "laravel-mix": "^6.0.42",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.26.9",
+    "sass-loader": "^8.0.2",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {}
 }

@@ -21,13 +21,6 @@
 
 
     <nav class="header__nav nav">
-        <div class="header__container">
-            <input type="checkbox" name="" id="">
-            <div class="hamburger-lines">
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
-            </div>
             <h2 class="nav__title"><?= __('Navigation principale', 'Aline-db-antilope'); ?></h2>
             <ul class="nav__container">
 		        <?php foreach(dw_get_menu_items('primary') as $link): ?>
@@ -40,8 +33,6 @@
                             <a href="<?= $locale['url']; ?>" lang="<?= $locale['locale']; ?>" hreflang="<?= $locale['locale']; ?>" class="nav__locale" title="<?= $locale['name']; ?>"><?= $code; ?></a>
 				        <?php endforeach; ?>
                     </div>
-        </div>
-
     </nav>
     <form class="header__search search" role="search" method="get" action="<?= get_home_url(); ?>">
         <div class="search__container">
