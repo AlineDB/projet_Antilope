@@ -2,15 +2,140 @@
 
 @media screen and (max-width: 767px){
 
-section{
-  margin: 1em 10px;
+
+  //header
+
+  h1{
+    margin-bottom: 0.5em;
+  }
+
+ .header__search{
+   display: flex;
+   justify-content: flex-end;
+   margin-top: 20em;
+ }
+
+  .nav__item{
+    margin-bottom: 1em;
+  }
+
+  .nav__locale{
+    margin-right: 0.5em;
+  }
+
+  //section
+  section{
+    margin: 2em 10px;
+  }
+
+
+  //dispositifs
+
+  .dispositifs__container{
+    height: 350px;
+    width: 300px;
+    overflow: scroll;
+    white-space: nowrap;
+    margin-left: 10em;
+    display: flex;
+    margin-right: 1.5em;
+    text-align: center;
+  }
+
+  .dispositifs__container::-webkit-scrollbar, .articles__container::-webkit-scrollbar {
+    width: 14px; /* width of the entire scrollbar */
+  }
+
+
+
+  .dispositifs__container::-webkit-scrollbar-thumb, .articles__container::-webkit-scrollbar-thumb {
+    background-color: #C58339; /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 3px solid #FB9A2E; /* creates padding around scroll thumb */
+
+  }
+  .dispositifs__fig img, .vlp-link-image{
+    max-width: auto;
+    max-height: 150px;
+
+  }
+
+  .dispositif__card{
+    padding: 1em;
+  }
+
+  .dispositif__card:hover{
+    background-color: #FB9A2E;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+  }
+
+  //articles
+
+  .articles__container{
+    height: 455px;
+    width: 380px;
+    overflow: scroll;
+    white-space: nowrap;
+    text-align: center;
+    margin-right: 2em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+
+  .article__card{
+    white-space: pre-line;
+    max-height: auto;
+    max-width: 30%;
+    text-align: left;
+    margin-right: 2em;
+    display: grid;
+    grid-gap: 0.5em;
+  }
+
+  .vlp-block-4, .vlp-link-image{
+    max-height: 20%;
+    max-width: auto;
+    margin-right: 2em;
+  }
+
+  .article__title{
+    margin: 0.2em;
+    font-size: 1.5em;
+  }
+
+  .article__date{
+    margin-bottom: -2em;
+  }
+
+  .article{
+    margin-bottom: 1.5em;
+  }
+
+  .article__card:hover{
+    background-color: #FB9A2E;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    padding-right: 350px;
+    padding-left: 5px;
+  }
+
+
+  //footer
+
+  .footer__list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+  }
+
 }
 
-
-
-}
-
-@media screen and (max-width: 1023px) {
-
-
-}

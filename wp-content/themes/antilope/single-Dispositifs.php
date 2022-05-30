@@ -15,7 +15,7 @@
             <p class="singleDispositif__p"><?= get_field('contenu_resultats',false, false) ?></p>
             <img src="<?= get_field('image_resultats', false, false) ?>" alt="">
             <h3 class="singleDispositif__price"><?= get_field('prix',false, false) ?></h3>
-            <a href="template-contact.php" class="singleDispositif__link"><?= __('Intéressé ? Contactez-nous!', 'Aline-db-antilope'); ?></a>
+            <a href="<?php echo get_home_url(). '/contact/' ;?>" class="singleDispositif__link"><?= __('Intéressé ? Contactez-nous!', 'Aline-db-antilope'); ?></a>
         </div>
         <aside class="singleDispositif__aside">
 		        <?php if(get_field('type')):  ?>

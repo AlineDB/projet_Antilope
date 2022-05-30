@@ -17,10 +17,10 @@
         </ul>
         <ul class="footer__legal">
             <li>
-                <a href="<?php echo get_template_directory_uri(). '/template-Politique.php'; ?>">  <?= __('Mentions légales', 'Aline-db-antilope'); ?></a>
+                <a href="<?php echo get_home_url(). '/politique-de-confidentialite/'; ?>">  <?= __('Mentions légales', 'Aline-db-antilope'); ?></a>
             </li>
             <li>
-                <a href="<?php echo get_template_directory_uri(). '/template-contact.php' ;?>">Contact</a>
+                <a href="<?php echo get_home_url(). '/contact/' ;?>">Contact</a>
             </li>
         </ul>
     </div>

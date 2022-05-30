@@ -92,6 +92,10 @@ footer{
   border-radius: 60px;
 }
 
+.screen-reader-text{
+  display: none;
+}
+
 /*text layout basic*/
 
 .search__label{
@@ -107,5 +111,33 @@ footer{
 
 .singleArticle__fig, .dispositifs__fig, .singleArticle__content{
   margin-bottom: 1.5625em;
+}
+
+.layout__about, .layout__articles{
+  margin-bottom: 8em;
+  margin-left: -50px;
+  border: 1px solid #FB9A2E;
+  padding: 4em;
+  -webkit-border-top-right-radius: 500px;
+  -webkit-border-bottom-right-radius: 500px;
+  -moz-border-radius-topright: 500px;
+  -moz-border-radius-bottomright: 500px;
+  border-top-right-radius: 500px;
+  border-bottom-right-radius: 500px;
+
+}
+
+.layout__dispositifs{
+  margin-bottom: 8em;
+  margin-right: -30px;
+  border: 1px solid #FB9A2E;
+  padding: 2em;
+  text-align: right;
+  -webkit-border-top-left-radius: 500px;
+  -webkit-border-bottom-left-radius: 500px;
+  -moz-border-radius-topleft: 500px;
+  -moz-border-radius-bottomleft: 500px;
+  border-top-left-radius: 500px;
+  border-bottom-left-radius: 500px;
 }
 
