@@ -16,10 +16,10 @@
             </li>
         </ul>
         <ul class="footer__legal">
-            <li>
+            <li class="footer__link">
                 <a href="<?php echo get_home_url(). '/politique-de-confidentialite/'; ?>">  <?= __('Mentions légales', 'Aline-db-antilope'); ?></a>
             </li>
-            <li>
+            <li class="footer__link">
                 <a href="<?php echo get_home_url(). '/contact/' ;?>">Contact</a>
             </li>
         </ul>

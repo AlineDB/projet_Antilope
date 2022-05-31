@@ -25,7 +25,8 @@
 		</div>
 	</section>
 
-<?php wp_pagenavi( array( 'type' => 'multipart' ) ); ?>
+<div class="pages"><?php wp_pagenavi( array( 'type' => 'multipart' ) ); ?></div>
+
 
 
 <?php get_footer(); ?>

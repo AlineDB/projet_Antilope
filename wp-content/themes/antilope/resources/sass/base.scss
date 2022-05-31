@@ -1,6 +1,7 @@
 /*fonts, colors et sizes basics*/
 
 
+
 h1, h2, h3, footer, .nav__container, .dispositif__title{
   font-family: 'Gothic Joker', serif;
 }
@@ -62,7 +63,7 @@ footer{
 
 /*links and buttons*/
 
-.dispositif__link, .article__link, .singleDispositif__link, .form__button, .about__link, .singleArticle__link, .articles__link{
+.dispositif__link, .article__link, .singleDispositif__link, .form__button, .about__link, .singleArticle__link, .articles__link, .qui__link{
   background-color: #FB9A2E;
   color: #FFFFFF;
   padding: 0.5em;
@@ -74,7 +75,7 @@ footer{
 }
 
 
-.dispositif__link:hover, .article__link:hover, .singleDispositif__link:hover, .form__button:hover, .about__link:hover, .singleArticle__link:hover, .articles__link:hover{
+.dispositif__link:hover, .qui__link:hover, .article__link:hover, .singleDispositif__link:hover, .form__button:hover, .about__link:hover, .singleArticle__link:hover, .articles__link:hover{
   background-color: #FFFFFF;
   color: #FB9A2E;
   border: 1px solid #FB9A2E;
@@ -83,7 +84,7 @@ footer{
   border-radius: 60px;
 }
 
-.header__search input{
+.header__search input, .form__input{
   background-color: #FFFFFF;
   color: #FB9A2E;
   border: 1px solid #FB9A2E;
@@ -113,7 +114,7 @@ footer{
   margin-bottom: 1.5625em;
 }
 
-.layout__about, .layout__articles{
+.layout__about, .layout__articles, .layout__pourquoi, .layout__qui{
   margin-bottom: 8em;
   margin-left: -50px;
   border: 1px solid #FB9A2E;
@@ -124,8 +125,9 @@ footer{
   -moz-border-radius-bottomright: 500px;
   border-top-right-radius: 500px;
   border-bottom-right-radius: 500px;
-
 }
+
+/*dispositifs*/
 
 .layout__dispositifs{
   margin-bottom: 8em;
@@ -139,5 +141,190 @@ footer{
   -moz-border-radius-bottomleft: 500px;
   border-top-left-radius: 500px;
   border-bottom-left-radius: 500px;
+}
+
+.dispositifs__container{
+  height: 350px;
+  width: 300px;
+  overflow: scroll;
+  white-space: nowrap;
+  margin-left: 10em;
+  display: flex;
+  margin-right: 1.5em;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.dispositifs__container::-webkit-scrollbar, .articles__container::-webkit-scrollbar {
+  width: 14px; /* width of the entire scrollbar */
+}
+
+
+
+.dispositifs__container::-webkit-scrollbar-thumb, .articles__container::-webkit-scrollbar-thumb {
+  background-color: #C58339; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid #FB9A2E; /* creates padding around scroll thumb */
+
+}
+
+.dispositifs__fig img, .vlp-link-image{
+  max-width: auto;
+  max-height: 150px;
+
+}
+
+.dispositif__card{
+  padding: 1em;
+}
+
+.dispositif__card:hover{
+  background-color: #FB9A2E;
+  transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+}
+
+
+/*articles*/
+
+.layout__articles{
+  margin-right: 30%;
+}
+
+.articles__container{
+  height: 455px;
+  width: 380px;
+  overflow: scroll;
+  white-space: nowrap;
+  text-align: center;
+  margin-right: 2em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: space-around;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.article__card{
+  white-space: pre-line;
+  max-height: auto;
+  max-width: 30%;
+  text-align: left;
+  margin-right: 2em;
+  display: grid;
+  grid-gap: 0.5em;
+}
+
+.vlp-block-4, .vlp-link-image{
+  max-height: 20%;
+  max-width: auto;
+  margin-right: 2em;
+}
+
+.article__title{
+  margin: 0.2em;
+  font-size: 1.5em;
+}
+
+.article__date{
+  margin-bottom: -2em;
+}
+
+.article{
+  margin-bottom: 1.5em;
+}
+
+.article__card:hover{
+  background-color: #FB9A2E;
+  transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  padding-right: 350px;
+  padding-left: 5px;
+}
+
+
+
+/****************/
+/*presentation page*/
+
+.qui__fig img{
+  max-width: 150px;
+  max-height: auto;
+}
+
+.qui__fig{
+  margin: 1em;
+}
+
+.qui__legend, .but__conclusion{
+  font-weight: bold;
+}
+
+.qui__partner{
+  margin-bottom: 4em;
+}
+
+.qui__partner p{
+  margin-bottom: 2em;
+}
+
+.qui__link{
+  margin: 2em 0.5em;
+}
+
+.about__fig img{
+ max-width: 80%;
+  margin: 1em 0.5em;
+}
+
+.layout__pourquoi{
+  display: grid;
+}
+
+
+.pourquoi__un, .pourquoi__deux{
+  grid-row: 2;
+  grid-column: 1;
+ max-width: 200px;
+  max-height: auto;
+}
+
+.pourquoi__deux{
+  z-index: -1;
+}
+
+.pourquoi__description{
+  background-color: #FFFFFF;
+  padding: 0.5em;
+}
+
+.pourquoi__un:hover{
+  display: none;
+}
+
+
+.pages{
+  margin-left: 50%;
+}
+
+
+/*form*/
+
+.contact__form{
+  font-family: "Modern No. 20", serif;
+  margin: 1em;
+
+}
+
+
+.form__field{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
 }
 

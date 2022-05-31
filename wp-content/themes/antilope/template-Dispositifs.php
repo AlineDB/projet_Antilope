@@ -1,9 +1,9 @@
 <?php /* Template Name: Dispositifs page template */ ?>
 <?php get_header(); ?>
 
-<section class="layout__dispositifs dispositifs">
+<section class="layout__dispositifsPage dispositifs">
 	<h2 class="dispositifs__title"><?= __('Les dispositifs', 'Aline-db-antilope'); ?></h2>
-	<div class="dispositifs__container">
+	<div class="dispositifs__containers">
 		<?php if(($dispositifs = dw_get_projects(300))->have_posts()): while($dispositifs->have_posts()): $dispositifs->the_post(); ?>
 			<article class="dispositif">
 				<div class="dispositif__card">
@@ -24,7 +24,7 @@
 	</div>
 </section>
 
+<div class="pages"><?php wp_pagenavi( array( 'type' => 'multipart' ) ); ?></div>
 
-<?php wp_pagenavi( array( 'type' => 'multipart' ) ); ?>
 
 <?php get_footer(); ?>

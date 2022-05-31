@@ -25,14 +25,39 @@
         <figure class="about__fig">
             <img src="<?php echo get_template_directory_uri().'/img/pollution_tueur_invisible_3.jpg'; ?>" alt="Illustration: la pollution tueur invisible">
         </figure>
-        <p class="but__description">Ses chiffres sont interpellant ! Nos dispositifs permettent de mieux comprendre et mesurer la qualité de l'air dans nos villes peut importe quel moyen de locomotion on utilise !</p>
+        <p class="but__conclusion">Ses chiffres sont interpellant ! Nos dispositifs permettent de mieux comprendre et mesurer la qualité de l'air dans nos villes peut importe quel moyen de locomotion on utilise !</p>
     </div>
-    <a href="http://localhost/Antilope/antilope/dispositifs"><?= __('Voir les différents dispositifs', 'Aline-db-antilope'); ?></a>
 </section>
-<section class="layout__qui">
-    <h2 class="qui__title"><?= __('Par qui ?', 'Aline-db-antilope'); ?></h2>
-    <div class="qui__container">
-            <?php if(($dispositifs = dw_get_projects(10))->have_posts()): while($dispositifs->have_posts()): $dispositifs->the_post(); ?>
+
+    <section class="layout__pourquoi">
+        <h2 class="pourquoi__title"><?= __('Pourquoi ?', 'Aline-db-antilope'); ?></h2>
+        <div class="pourquoi__un">
+            <div>
+                <img src="<?php echo get_template_directory_uri().'/img/antilope_apocalypse.png'; ?>" alt="Illustration de la savanne polluée">
+                <p class="pourquoi__description">Parce que nous ne voulons pas de ça</p>
+            </div>
+            <div>
+                <img src="<?php echo get_template_directory_uri().'/img/pollution.png'; ?>" alt="Ville sous les gaz et la pollution">
+                <p class="pourquoi__description">Gaz, pollution, problèmes de santé, ...</p>
+            </div>
+        </div>
+        <div class="pourquoi__deux">
+            <div >
+                <img src="<?php echo get_template_directory_uri().'/img/savannah.png'; ?>" alt="Homme qui respire l'air frais">
+                <p class="pourquoi__description">Mais de ça pour nous et les générations futures !</p>
+            </div>
+            <div >
+                <img src="<?php echo get_template_directory_uri().'/img/breathe.png'; ?>" alt="Illustration de la savanne">
+                <p class="pourquoi__description">Air pur, environnement sain, nature respectée, ...</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="layout__dispositifs dispositifs">
+        <h2 class="dispositifs_title"><?= __('Nos dispositifs', 'Aline-db-antilope'); ?></h2>
+        <div class="dispositifs__container">
+			<?php if(($dispositifs = dw_get_projects(10))->have_posts()): while($dispositifs->have_posts()): $dispositifs->the_post(); ?>
                 <article class="dispositif">
                     <div class="dispositif__card">
                         <header class="dispositif__head">
@@ -40,29 +65,49 @@
                             <p class="dispositifs__"></p>
                         </header>
                         <figure class="dispositifs__fig">
-                            <?= get_the_post_thumbnail(null, 'post-thumbnail', ['class' => 'dispositifs__thumb']); ?>
+							<?= get_the_post_thumbnail(null, 'post-thumbnail', ['class' => 'dispositifs__thumb']); ?>
                         </figure>
                         <a href="<?= get_the_permalink(); ?>" class="dispositif__link"><?= __('Voir le projet', 'Aline-db-antilope'); ?> <?= get_the_title(); ?> en détails</a>
                     </div>
                 </article>
-            <?php endwhile; else: ?>
+			<?php endwhile; else: ?>
                 <p class="dispositifs__empty"><?= __('Il n\'y a pas de projet à vous monter ...', 'Aline-db-antilope'); ?></p>
-            <?php endif; ?>
-        <figure class="qui__fig">
-            <figcaption class="qui__legend">L'ISSEP est une unité d'Aministration Publique qui surveille l'environnement,
-                prévient les risques et nuisances, effectue des recherches scientifique et Laboratoire de Référene pour la Wallonie.</figcaption>
-            <img src="<?php echo get_template_directory_uri().'/img/logo_ISSEP.jpg'; ?>" alt="Logo de l'ISSEP">
-        </figure>
-        <figure class="qui__fig">
-            <figcaption class="qui__legend">Le service électronique de la HEPL</figcaption>
-            <img src="<?php echo get_template_directory_uri().'/img/logo_electro.png'; ?>" alt="Logo du service électronique de la HEPL">
-        </figure>
-        <figure class="qui__fig">
-            <figcaption class="qui__legend">La HEPL et le cursus ingénierie</figcaption>
-            <img src="<?php echo get_template_directory_uri().'/img/logo_HEPL-150x60.jpg'; ?>" alt="Logo de la HEPL">
-        </figure>
+			<?php endif; ?>
+        </div>
+        <a class="qui__link" href="<?= get_home_url(); ?>/dispositifs"><?= __('Voir les différents dispositifs', 'Aline-db-antilope'); ?></a>
+    </section>
+
+<section class="layout__qui">
+    <h2 class="qui__title"><?= __('Par qui ?', 'Aline-db-antilope'); ?></h2>
+    <div class="qui__container" itemscope itemtype="https://schema.org/Person">
+        <div class="qui__partner">
+            <figure class="qui__fig">
+                <figcaption class="qui__legend">L'ISSEP est une unité d'Aministration Publique qui surveille l'environnement,
+                    prévient les risques et nuisances, effectue des recherches scientifique et Laboratoire de Référene pour la Wallonie.</figcaption>
+                <img itemprop="image" src="<?php echo get_template_directory_uri().'/img/logo_ISSEP.jpg'; ?>" alt="Logo de l'ISSEP">
+            </figure>
+            <p><span itemprop="name">Fabian Lenartz</span> : <span itemprop="worksfor" >Département Qualité de l'air</span></p>
+            <p><span itemprop="name">Guy Gerard</span> : <span itemprop="jobTitle">Responsable</span>, <span itemprop="worksfor" >Département Qualité de l'air</span></p>
+            <a class="qui__link" href="https://www.issep.be" itemprop="url">Site de l'ISSEP</a>
+        </div>
+        <div class="qui__partner">
+            <figure class="qui__fig">
+                <figcaption class="qui__legend" >Le service électronique de la HEPL</figcaption>
+                <img itemprop="image" src="<?php echo get_template_directory_uri().'/img/logo_electro.png'; ?>" alt="Logo du service électronique de la HEPL">
+            </figure>
+            <p><span itemprop="name">Valery Broun, Sylvain Gichaux et Christophe Brose</span> : <span itemprop="jobTitle">Ingénieurs</span>, <span itemprop="worksfor" >HEPL (Service électronique & systèmes embarqué, Département Ingénieur)</span></p>
+            <a class="qui__link" href="https://hepl-electro.wixsite.com/index" itemprop="url">Site du service électronique</a>
+            <a class="qui__link" href="https://www.facebook.com/ISILELECTRO" itemprop="url">Facebook du service électronique</a>
+        </div>
+        <div class="qui__partner">
+            <figure class="qui__fig">
+                <figcaption class="qui__legend">La HEPL et le cursus ingénierie</figcaption>
+                <img itemprop="image" src="<?php echo get_template_directory_uri().'/img/logo_HEPL-150x60.jpg'; ?>" alt="Logo de la HEPL">
+            </figure>
+            <a class="qui__link" href="https://www.hepl.be/fr/master-ingenieur-industriel" itemprop="url">Site de la HEPL: master ingénieur</a>
+        </div>
     </div>
-    <a href="http://localhost/Antilope/antilope/contact"><?= __('Contact', 'Aline-db-antilope'); ?></a>
+    <a class="qui__link" href="<?= get_home_url(); ?>/contact"><?= __('Contactez-les !', 'Aline-db-antilope'); ?> ></a>
 </section>
 
 </body>

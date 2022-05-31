@@ -16,9 +16,10 @@
     align-items: flex-start;
     align-content: end;
     gap: 20px;
+
   }
   .header__tagline{
-    grid-row: 2;
+    grid-row: 3;
     justify-self: end;
     font-size: 1.5em;
   }
@@ -28,8 +29,22 @@
     grid-column: 2;
   }
   h1{
+    grid-row: 2;
     justify-self: end;
-    align-self: end;
+    align-self: start;
+  }
+
+  input[id=toggle]{
+    display: none;
+  }
+
+  .nav__languages{
+    margin-top: 1em;
+    text-align: right;
+  }
+
+  .nav__locale, .nav__items{
+    margin-right: 1em;
   }
 
 
@@ -37,6 +52,135 @@
 
   .about__description{
     margin-left: 6.25em; /*100/16*/
+    margin-bottom: 3em;
+  }
+  .about_title{
+    margin-left: 1.6666666667em; /*100/60 */
+  }
+
+  .layout__about{
+    margin-top: 3em;
+    margin-right: 30%;
+  }
+
+  .about__link{
+    margin-left: 70%;
+  }
+
+  /*dispositifs*/
+
+  .layout__dispositifs{
+    margin-left: 30%;
+  }
+
+ .dispositifs__container{
+   width: 800px;
+ }
+
+  /*articles*/
+
+  .layout__articles{
+    margin-top: 4em;
+  }
+
+  .articles__container {
+    height: 455px;
+    width: 1300px;
+  }
+
+  .article__card {
+    max-width: 70%;
+  }
+
+  .article__date{
+    text-align: right;
+  }
+
+  .article__title{
+    font-size: 2em;
+    padding-left: 10px;
+  }
+
+  .article__card:hover{
+    padding-left: 10px;
+  }
+
+  /*presentation page*/
+
+   .layout__but{
+    padding: 1em;
+    margin: 2em 15%;
+    border: #FB9A2E 1px solid ;
+  }
+
+  .about__fig{
+    text-align: center;
+  }
+
+  .layout__qui, .layout__pourquoi{
+    margin-right: 30%;
+  }
+
+  .pourquoi__container{
+    display: flex;
+  }
+
+  .layout__pourquoi{
+    display: grid;
+  }
+
+
+  .pourquoi__un, .pourquoi__deux{
+    grid-row: 2;
+    grid-column: 1;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .pourquoi__deux{
+    z-index: -1;
+  }
+
+  .pourquoi__description{
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 0.5em;
+  }
+
+  .pourquoi__un:hover{
+    display: none;
+  }
+
+  .pourquoi__un div, .pourquoi__deux div{
+    margin-right: 2em;
+  }
+
+  /*dispositifs page*/
+
+  .layout__dispositifsPage{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+
+  .layout__dispositifsPage .dispositif__link{
+    margin-left: 80%;
+  }
+
+  /*formulaire*/
+
+  .contact__form{
+    margin-left: 30%;
+    margin-right: 30%;
+    display: grid;
+  }
+
+
+  /*footer*/
+
+  .footer__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
 
