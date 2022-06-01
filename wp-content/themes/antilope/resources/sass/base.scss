@@ -1,6 +1,14 @@
 /*fonts, colors et sizes basics*/
 
+@font-face {
+  font-family: "Modern No. 20", serif;
+  src: url("../../fonts/Modern No. 20.ttf");
+}
 
+@font-face {
+  font-family: "Gothic Joker", sans-serif;
+  src: url("../../fonts/GothicJoker-gxxGP.ttf");
+}
 
 h1, h2, h3, footer, .nav__container, .dispositif__title{
   font-family: 'Gothic Joker', serif;
@@ -312,6 +320,42 @@ footer{
   margin-left: 50%;
 }
 
+/**** single dispositif page ******/
+
+.layout__singleDispositif{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.heateor_sss_sharing_container{
+  text-align: right;
+}
+
+.heateor_sss_sharing_ul{
+  margin: 1em;
+}
+
+.heateor_sss_sharing_ul a{
+  margin-right: 0.5em;
+}
+
+.heateor_sss_sharing_ul a:hover{
+  border: 1px dotted #FB9A2E;
+}
+
+.single__price, .single__caracteristics, .single__results, .single__technicals, .singleDispositif__aside{
+  border: 1px solid #FB9A2E;
+  -webkit-border-radius: 600px;
+  -moz-border-radius: 600px;
+  border-radius: 600px;
+  padding: 0 2em 3em 2em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.singleDispositif__aside{
+  text-align: center;
+}
 
 /*form*/
 
@@ -328,3 +372,74 @@ footer{
   margin-bottom: 2em;
 }
 
+.form__input{
+  padding: 0.5em;
+  width: 200px;
+}
+
+.form__input:focus{
+  background-color: #FB9A2E;
+  opacity: 20%;
+}
+
+.form__checkbox a{
+  text-decoration: underline;
+  text-decoration-color: #FB9A2E;
+}
+
+.form__checkbox a:hover{
+  color: #FB9A2E;
+}
+
+
+
+/* ancre */
+
+/*ancre haut de page*/
+div[id="FixedNav"]
+{
+  position:fixed;
+  bottom: 100px;
+  right: 80px;
+  cursor: pointer;
+  z-index: 1;
+  background-color: #FFFFFF;
+  border-radius: 100px;
+  width: 48px;
+  height: 48px;
+  animation:  clignoter 20s linear infinite;
+  transition: none;
+}
+
+@keyframes clignoter {
+  0%,10%   { transform: scale(1);}
+  5%   {  transform: scale(0.7);}
+}
+
+div[id="FixedNav"] a{
+  border-bottom: none;
+}
+
+.cVisible{
+  visibility: visible;
+  transition: 5s;
+  display: initial;
+}
+
+.cInvisible{
+  visibility: hidden;
+  display: none;
+}
+
+
+/*apparition au scroll*/
+.reveal{
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.reveal-visible{
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s cubic-bezier(.5, 0, 0, 1);
+}

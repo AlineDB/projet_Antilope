@@ -29,7 +29,7 @@
     </div>
 </section>
 
-    <section class="layout__pourquoi">
+    <section class="layout__pourquoi reveal">
         <h2 class="pourquoi__title"><?= __('Pourquoi ?', 'Aline-db-antilope'); ?></h2>
         <div class="pourquoi__un">
             <div>
@@ -54,7 +54,7 @@
 
     </section>
 
-    <section class="layout__dispositifs dispositifs">
+    <section class="layout__dispositifs dispositifs reveal">
         <h2 class="dispositifs_title"><?= __('Nos dispositifs', 'Aline-db-antilope'); ?></h2>
         <div class="dispositifs__container">
 			<?php if(($dispositifs = dw_get_projects(10))->have_posts()): while($dispositifs->have_posts()): $dispositifs->the_post(); ?>
@@ -77,7 +77,7 @@
         <a class="qui__link" href="<?= get_home_url(); ?>/dispositifs"><?= __('Voir les différents dispositifs', 'Aline-db-antilope'); ?></a>
     </section>
 
-<section class="layout__qui">
+<section class="layout__qui reveal">
     <h2 class="qui__title"><?= __('Par qui ?', 'Aline-db-antilope'); ?></h2>
     <div class="qui__container" itemscope itemtype="https://schema.org/Person">
         <div class="qui__partner">

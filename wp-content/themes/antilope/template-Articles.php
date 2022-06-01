@@ -6,7 +6,7 @@
 		<h2 class="articles__title"><?= __('Les articles', 'Aline-db-antilope'); ?></h2>
 		<div class="articles__container">
 			<?php if(($articles = dw_get_articles(300))->have_posts()): while($articles->have_posts()): $articles->the_post(); ?>
-				<article class="articles">
+				<article class="articles reveal">
 					<a href="<?= get_the_permalink(); ?>" class="articles__link"><?=  __('Lire le résumé', 'Aline-db-antilope'); ?></a>
 					<div class="articles__card">
 						<header class="articles__head">
