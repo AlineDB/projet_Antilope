@@ -29,7 +29,7 @@
     </div>
 </section>
 
-    <section class="layout__pourquoi reveal">
+    <section class="layout__pourquoi">
         <h2 class="pourquoi__title"><?= __('Pourquoi ?', 'Aline-db-antilope'); ?></h2>
         <div class="pourquoi__un">
             <div>
@@ -54,7 +54,7 @@
 
     </section>
 
-    <section class="layout__dispositifs dispositifs reveal">
+    <section class="layout__dispositifs dispositifs">
         <h2 class="dispositifs_title"><?= __('Nos dispositifs', 'Aline-db-antilope'); ?></h2>
         <div class="dispositifs__container">
 			<?php if(($dispositifs = dw_get_projects(10))->have_posts()): while($dispositifs->have_posts()): $dispositifs->the_post(); ?>
@@ -74,40 +74,40 @@
                 <p class="dispositifs__empty"><?= __('Il n\'y a pas de projet à vous monter ...', 'Aline-db-antilope'); ?></p>
 			<?php endif; ?>
         </div>
-        <a class="qui__link" href="<?= get_home_url(); ?>/dispositifs"><?= __('Voir les différents dispositifs', 'Aline-db-antilope'); ?></a>
+        <a class="dispositif__link" href="<?= get_home_url(); ?>/dispositifs"><?= __('Voir les différents dispositifs', 'Aline-db-antilope'); ?></a>
     </section>
 
-<section class="layout__qui reveal">
+<section class="layout__qui">
     <h2 class="qui__title"><?= __('Par qui ?', 'Aline-db-antilope'); ?></h2>
     <div class="qui__container" itemscope itemtype="https://schema.org/Person">
         <div class="qui__partner">
             <figure class="qui__fig">
-                <figcaption class="qui__legend">L'ISSEP est une unité d'Aministration Publique qui surveille l'environnement,
+                <figcaption class="qui__legend">L'<abbr title="Institut Scientifique du Service Public">ISSEP</abbr> est une unité d'Aministration Publique qui surveille l'environnement,
                     prévient les risques et nuisances, effectue des recherches scientifique et Laboratoire de Référene pour la Wallonie.</figcaption>
                 <img itemprop="image" src="<?php echo get_template_directory_uri().'/img/logo_ISSEP.jpg'; ?>" alt="Logo de l'ISSEP">
             </figure>
             <p><span itemprop="name">Fabian Lenartz</span> : <span itemprop="worksfor" >Département Qualité de l'air</span></p>
             <p><span itemprop="name">Guy Gerard</span> : <span itemprop="jobTitle">Responsable</span>, <span itemprop="worksfor" >Département Qualité de l'air</span></p>
-            <a class="qui__link" href="https://www.issep.be" itemprop="url">Site de l'ISSEP</a>
+            <a class="qui__link" href="https://www.issep.be" itemprop="url">Site de l'<abbr title="Institut Scientifique du Service Public">ISSEP</abbr></a>
         </div>
         <div class="qui__partner">
             <figure class="qui__fig">
-                <figcaption class="qui__legend" >Le service électronique de la HEPL</figcaption>
+                <figcaption class="qui__legend" >Le service électronique de la <abbr title="Haute Ecole de la Province de Liège">HEPL</abbr></figcaption>
                 <img itemprop="image" src="<?php echo get_template_directory_uri().'/img/logo_electro.png'; ?>" alt="Logo du service électronique de la HEPL">
             </figure>
-            <p><span itemprop="name">Valery Broun, Sylvain Gichaux et Christophe Brose</span> : <span itemprop="jobTitle">Ingénieurs</span>, <span itemprop="worksfor" >HEPL (Service électronique & systèmes embarqué, Département Ingénieur)</span></p>
+            <p><span itemprop="name">Valery Broun, Sylvain Gichaux et Christophe Brose</span> : <span itemprop="jobTitle">Ingénieurs</span>, <span itemprop="worksfor" > <abbr title="Haute Ecole de la Province de Liège">HEPL</abbr> (Service électronique & systèmes embarqué, Département Ingénieur)</span></p>
             <a class="qui__link" href="https://hepl-electro.wixsite.com/index" itemprop="url">Site du service électronique</a>
-            <a class="qui__link" href="https://www.facebook.com/ISILELECTRO" itemprop="url">Facebook du service électronique</a>
+            <a class="qui__link" href="https://www.facebook.com/ISILELECTRO" itemprop="url">Leur Facebook</a>
         </div>
         <div class="qui__partner">
             <figure class="qui__fig">
-                <figcaption class="qui__legend">La HEPL et le cursus ingénierie</figcaption>
+                <figcaption class="qui__legend">La <abbr title="Haute Ecole de la Province de Liège">HEPL</abbr> et le cursus ingénierie</figcaption>
                 <img itemprop="image" src="<?php echo get_template_directory_uri().'/img/logo_HEPL-150x60.jpg'; ?>" alt="Logo de la HEPL">
             </figure>
-            <a class="qui__link" href="https://www.hepl.be/fr/master-ingenieur-industriel" itemprop="url">Site de la HEPL: master ingénieur</a>
+            <a class="qui__link" href="https://www.hepl.be/fr/master-ingenieur-industriel" itemprop="url">Site de la <abbr title="Haute Ecole de la Province de Liège">HEPL</abbr> : master ingénieur</a>
         </div>
     </div>
-    <a class="qui__link" href="<?= get_home_url(); ?>/contact"><?= __('Contactez-les !', 'Aline-db-antilope'); ?> ></a>
+    <a class="qui__link" href="<?= get_home_url(); ?>/contact"><?= __('Contactez-les !', 'Aline-db-antilope'); ?> </a>
 </section>
 
 </body>

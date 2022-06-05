@@ -1,21 +1,27 @@
 /*fonts, colors et sizes basics*/
 
 @font-face {
-  font-family: "Modern No. 20", serif;
-  src: url("../../fonts/Modern No. 20.ttf");
+  font-family: "Modern No. 20";
+  src: url("../../fonts/Modern.ttf") format("truetype");
+  src: url("../../fonts/modern_no._20.woff") format("woff");
+  font-weight: normal;
 }
 
 @font-face {
-  font-family: "Gothic Joker", sans-serif;
-  src: url("../../fonts/GothicJoker-gxxGP.ttf");
+  font-family: "Gothic Joker";
+  font-weight: normal;
+  src: url("../../fonts/GothicJoker.ttf") format("truetype");
+  src: url("../../fonts/gothicjoker-gxxgp_2.woff") format("woff");
 }
 
 h1, h2, h3, footer, .nav__container, .dispositif__title{
-  font-family: 'Gothic Joker', serif;
+  font-family: 'Gothic Joker', Impact, sans-serif;
+  font-weight: normal;
 }
 
 html{
   font-family: "Modern No. 20", serif;
+  font-weight: normal;
 }
 
 .nav__container a, footer a{
@@ -32,6 +38,7 @@ html{
 .header{
  background-image: url("../../img/pexels-pixabay-221012.jpg");
   background-position: center;
+  background-repeat: no-repeat;
   color: #FFFFFF;
   height: 31.25em; /*500*/
 }
@@ -92,13 +99,25 @@ footer{
   border-radius: 60px;
 }
 
-.header__search input, .form__input{
+.header__search input{
+  background-color: #FB9A2E;
+  color: #FFFFFF;
+  border: 1px solid #FB9A2E;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+}
+
+.header__search input[type=text], .header__search input:hover, .form__input{
   background-color: #FFFFFF;
   color: #FB9A2E;
   border: 1px solid #FB9A2E;
   -webkit-border-radius: 60px;
   -moz-border-radius: 60px;
   border-radius: 60px;
+}
+.form__input{
+  color: black;
 }
 
 .screen-reader-text{
@@ -114,7 +133,7 @@ footer{
 .about__description, .but__description, .qui__legend{
   max-width: 700px;
   margin-bottom: 1.5625em;
-  line-height: 20px;
+  line-height: 25px;
 }
 
 
@@ -139,7 +158,7 @@ footer{
 
 .layout__dispositifs{
   margin-bottom: 8em;
-  margin-right: -30px;
+
   border: 1px solid #FB9A2E;
   padding: 2em;
   text-align: right;
@@ -203,7 +222,7 @@ footer{
 
 .articles__container{
   height: 455px;
-  width: 380px;
+  width: 350px;
   overflow: scroll;
   white-space: nowrap;
   text-align: center;
@@ -316,6 +335,7 @@ footer{
 }
 
 
+
 .pages{
   margin-left: 50%;
 }
@@ -365,6 +385,15 @@ footer{
 
 }
 
+.form__field:nth-child(1){
+  margin-top: 1em;
+}
+
+.contact_form_feedback{
+  color: #d79f9f;
+  font-weight: bold;
+}
+
 
 .form__field{
   display: flex;
@@ -391,6 +420,10 @@ footer{
   color: #FB9A2E;
 }
 
+.form__confirm{
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
 
 
 /* ancre */

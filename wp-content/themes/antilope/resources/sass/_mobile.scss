@@ -12,11 +12,12 @@
  .header__search{
    display: flex;
    justify-content: flex-end;
-   margin-top: 20em;
+   margin-top: 15em;
  }
 
   .nav__item{
     margin-bottom: 1em;
+    font-size: 0.8em;
   }
 
   .nav__locale{
@@ -29,13 +30,16 @@
   }
 
 
-  //dispositifs
+  //presentation page
 
+  .pourquoi__un img, .pourquoi__deux img{
+    max-width: 250px;
+  }
 
-
-  //articles
-
-
+  .qui__link{
+    display: block;
+    max-width: 8em;
+  }
 
 
   //footer
@@ -44,6 +48,14 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 1.5em;
+  }
+
+
+  //ancre
+  div[id="FixedNav"]
+  {
+    right: 100px;
+
   }
 
 }

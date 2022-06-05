@@ -5,7 +5,7 @@
 	<h2 class="dispositifs__title"><?= __('Les dispositifs', 'Aline-db-antilope'); ?></h2>
 	<div class="dispositifs__containers">
 		<?php if(($dispositifs = dw_get_projects(300))->have_posts()): while($dispositifs->have_posts()): $dispositifs->the_post(); ?>
-			<article class="dispositif reveal">
+			<article class="dispositif">
 				<div class="dispositif__card">
 					<header class="dispositif__head">
 						<h3 class="dispositif__title"><?= get_the_title(); ?></h3>

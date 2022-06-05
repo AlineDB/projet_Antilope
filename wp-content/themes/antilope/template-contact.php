@@ -7,7 +7,7 @@
             <?=  get_the_content();  ?>
         </div>
         <?php if(! isset($_SESSION['contact_form_feedback']) || ! $_SESSION['contact_form_feedback']['success']) : ?>
-            <form action="<?= get_home_url(); ?>/wp-admin/admin-post.php" method="post" class="contact__form" >
+            <form action="https://antilope.aline-db.be/wp-admin/admin-post.php" method="post" class="contact__form" >
                 <?php if(isset($_SESSION['contact_form_feedback'])) : ?>
                     <p><?= __('Oups ! Il y a des erreurs dans le formulaire', 'Aline-db-antilope'); ?></p>
                 <?php endif; ?>
@@ -46,7 +46,7 @@
                 </div>
             </form>
         <?php else : ?>
-            <p id="contact"><?= __('Merci ! Votre message a bien été envoyé.', 'Aline-db-antilope'); ?>.</p>
+            <p class="form__confirm" id="contact"><?= __('Merci ! Votre message a bien été envoyé.', 'Aline-db-antilope'); ?>.</p>
             <?php unset($_SESSION['contact_form_feedback']); endif; ?>
     </main>
 <?php endwhile; endif; ?>

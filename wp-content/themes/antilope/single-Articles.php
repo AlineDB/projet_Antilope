@@ -8,7 +8,7 @@
 			<?= get_the_post_thumbnail(null, 'thumbnail', ['class' => 'singleDispositif__thumb']); ?>
 		</figure>
 		<div class="singleArticle__content">
-            <?=  the_content();  ?>
+            </a><?=  the_content();  ?>
 		</div>
         <a class="singleArticle__link" href="<?= get_permalink() ;?>">Lire à la source</a>
         <aside class="singleArticle__details">

@@ -15,7 +15,7 @@
 
 </head>
 <header class="header">
-    <h1 class="header__title"><?= get_bloginfo('name'); ?></h1>
+    <h1 class="header__title" lang="en-GB"><?= get_bloginfo('name'); ?></h1>
     <p class="header__tagline"><?= get_bloginfo('description'); ?></p>
 
     <input id="toggle" type="checkbox">
