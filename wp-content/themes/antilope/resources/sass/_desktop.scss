@@ -67,18 +67,7 @@
     margin-left: 70%;
   }
 
-  /*dispositifs*/
 
-  .layout__dispositifs{
-    margin-left: 30%;
-  }
-
- .dispositifs__container{
-   width: 800px;
- }
-  .singleDispositif__fig{
-    margin-left: 45%;
-  }
 
   /*articles*/
 
@@ -158,16 +147,39 @@
     margin-right: 2em;
   }
 
-  /*dispositifs page*/
+  /*dispositifs and articles page*/
 
-  .layout__dispositifsPage{
+  .layout__dispositifsPage, .layout__articlesPage{
     margin-left: 0.5em;
     margin-right: 0.5em;
   }
 
-  .layout__dispositifsPage .dispositif__link{
-    margin-left: 80%;
+  .layout__dispositifs{
+    margin-left: 30%;
   }
+
+  .dispositifs__container, .articles__containerPage{
+    width: 800px;
+  }
+
+  .dispositifs__thumb{
+    margin-left: 45%;
+    max-width: 150px;
+  }
+
+  .dispositif__card, .articles__card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+  .dispositif__link{
+    margin-left: 65%;
+
+  }
+
+
 
   /*formulaire*/
 

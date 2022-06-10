@@ -203,21 +203,37 @@ footer{
 
 .dispositif__card{
   padding: 1em;
+  border: 1px solid #FB9A2E;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  margin-bottom: 1.5em;
 }
 
 .dispositif__card:hover{
-  background-color: #FB9A2E;
-  transition: all 0.5s ease-in-out;
+  background-color: #FFDEAD;
+  transition: all 1s ease-in-out;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 50px;
 }
 
 
+
+
 /*articles*/
 
 .layout__articles{
   margin-right: 30%;
+}
+
+.articles{
+  padding: 1em;
+  border: 1px solid #FB9A2E;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  margin-bottom: 1.5em;
 }
 
 .articles__container{

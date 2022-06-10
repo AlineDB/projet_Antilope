@@ -11,7 +11,7 @@
     <meta name="description" content="Projet Antilope par Aline DE BARROS">
     <meta name="DE BARROS Aline">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta accesskey=" HEPL, ISSEP, pollution, mesures, appareils, antilope, ingénieurs, écoles, électronique">
+    <meta accesskey=" HEPL, ISSEP, pollution, mesures, appareils, antilope, ingénieurs, écoles, électronique, dispositifs, modules, qualité, air, campagne, mobile, fixe">
 
 </head>
 <header class="header">
