@@ -13,5 +13,5 @@
 /wp-content/themes/*
 !/wp-content/themes/antilope
 /wp-content/themes/antilope/public
-
+!doc
 
