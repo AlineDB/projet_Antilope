@@ -17,7 +17,15 @@ Pour les recherches, une première recherche concenrnat les mots-clé / articles
 
 ## Prototype / wireframe
 
-Le prototype navigable basique [ici](https://github.com/AlineDB/projet_Antilope/blob/main/doc/design%20antilope%202.xd)
+Le prototype navigable basique [sur InVision](https://aline-db.invisionapp.com/console/share/HSTA28XU3KE)
+
+Le wireframe complet [ici](https://github.com/AlineDB/projet_Antilope/blob/main/doc/prototype/antilope%20complet%20wireframe.png)
+
+Les scénarios tests utilisateurs [ici](https://github.com/AlineDB/projet_Antilope/blob/main/doc/prototype/tests%20utilisatzeurs%20prototype.docx)
+
+Analyse et personas se trouvent [ici](https://github.com/AlineDB/projet_Antilope/blob/main/doc/prototype/analyse%20et%20personas.docx)
+
+
 
 
 ## Tests
