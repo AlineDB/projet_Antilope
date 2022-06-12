@@ -14,16 +14,28 @@
             Nous proposons de montrer dans cette communication, les différentes variantes de nos modules ANTILOPE ainsi que de présenter les résultats des mesures faites en environnement contrôlé (matrice de gaz) ainsi que des mesures faites en environnement extérieur que nous confronterons avec les mesures réalisées par les appareils professionnels.
         </p>
         <figure class="about__fig">
-            <img src="<?php echo get_template_directory_uri().'/img/pollution_pre-post_confinement_liege.jpg'; ?>" alt="Graphique des mesures de pollution avent et après le confinement en 2020">
+            <img src="<?php echo get_template_directory_uri().'/img/pollution_pre-post_confinement_liege.jpg'; ?>"
+                 srcset="<?php echo get_template_directory_uri().'/img/pollution_pre-post_confinement_liege-150x150.jpg 767px'; ?>,
+                         <?php echo get_template_directory_uri().'/img/pollution_pre-post_confinement_liege-300x181.jpg 1024px'; ?>"
+                 alt="Graphique des mesures de pollution avent et après le confinement en 2020">
         </figure>
         <figure class="about__fig">
-            <img src="<?php echo get_template_directory_uri().'/img/pollution_tueur_invisible.jpg'; ?>" alt="Illustration: la pollution tueur silencieux">
+            <img src="<?php echo get_template_directory_uri().'/img/pollution_tueur_invisible.jpg'; ?>"
+                 srcset="<?php echo get_template_directory_uri().'/img/pollution_tueur_invisible-150x150.jpg 767px'; ?>,
+                        <?php echo get_template_directory_uri().'/img/pollution_tueur_invisible-300x181.jpg 1024px'; ?>"
+                 alt="Illustration: la pollution tueur silencieux">
         </figure>
         <figure class="about__fig">
-            <img src="<?php echo get_template_directory_uri().'/img/pollution_tueur_invisible_2.jpg'; ?>" alt="Illustration: la pollution tueur invisible">
+            <img src="<?php echo get_template_directory_uri().'/img/pollution_tueur_invisible_2.jpg'; ?>"
+                 srcset="<?php echo get_template_directory_uri().'/img/pollution_tueur_invisible_2-150x150.jpg 767px'; ?>,
+                        <?php echo get_template_directory_uri().'/img/pollution_tueur_invisible_2-300x181.jpg 1024px'; ?>"
+                 alt="Illustration: la pollution tueur invisible">
         </figure>
         <figure class="about__fig">
-            <img src="<?php echo get_template_directory_uri().'/img/pollution_tueur_invisible_3.jpg'; ?>" alt="Illustration: la pollution tueur invisible">
+            <img src="<?php echo get_template_directory_uri().'/img/pollution_tueur_invisible_3.jpg'; ?>"
+                 srcset="<?php echo get_template_directory_uri().'/img/pollution_tueur_invisible_3-150x150.jpg 767px'; ?>,
+                        <?php echo get_template_directory_uri().'/img/pollution_tueur_invisible_3-300x181.jpg 1024px'; ?>"
+                 alt="Illustration: la pollution tueur invisible">
         </figure>
         <p class="but__conclusion">Ses chiffres sont interpellant ! Nos dispositifs permettent de mieux comprendre et mesurer la qualité de l'air dans nos villes peut importe quel moyen de locomotion on utilise !</p>
     </div>
@@ -84,7 +96,10 @@
             <figure class="qui__fig">
                 <figcaption class="qui__legend">L'<abbr title="Institut Scientifique du Service Public">ISSEP</abbr> est une unité d'Aministration Publique qui surveille l'environnement,
                     prévient les risques et nuisances, effectue des recherches scientifique et Laboratoire de Référene pour la Wallonie.</figcaption>
-                <img itemprop="image" src="<?php echo get_template_directory_uri().'/img/logo_ISSEP.jpg'; ?>" alt="Logo de l'ISSEP">
+                <img itemprop="image" src="<?php echo get_template_directory_uri().'/img/logo_ISSEP.jpg'; ?>"
+                     srcset="<?php echo get_template_directory_uri().'logo_ISSEP-150x150.jpg 767px'; ?>,
+                        <?php echo get_template_directory_uri().'logo_ISSEP.jpg 1024px'; ?>"
+                     alt="Logo de l'ISSEP">
             </figure>
             <p><span itemprop="name">Fabian Lenartz</span> : <span itemprop="worksfor" >Département Qualité de l'air</span></p>
             <p><span itemprop="name">Guy Gerard</span> : <span itemprop="jobTitle">Responsable</span>, <span itemprop="worksfor" >Département Qualité de l'air</span></p>
@@ -93,7 +108,10 @@
         <div class="qui__partner">
             <figure class="qui__fig">
                 <figcaption class="qui__legend" >Le service électronique de la <abbr title="Haute Ecole de la Province de Liège">HEPL</abbr></figcaption>
-                <img itemprop="image" src="<?php echo get_template_directory_uri().'/img/logo_electro.png'; ?>" alt="Logo du service électronique de la HEPL">
+                <img itemprop="image" src="<?php echo get_template_directory_uri().'/img/logo_electro.png'; ?>"
+                     srcset="<?php echo get_template_directory_uri().'/img/logo_electro-150x150.jpg 767px'; ?>,
+                        <?php echo get_template_directory_uri().'/img/logo_electro-300x300.jpg 1024px'; ?>"
+                     alt="Logo du service électronique de la HEPL">
             </figure>
             <p><span itemprop="name">Valery Broun, Sylvain Gichaux et Christophe Brose</span> : <span itemprop="jobTitle">Ingénieurs</span>, <span itemprop="worksfor" > <abbr title="Haute Ecole de la Province de Liège">HEPL</abbr> (Service électronique & systèmes embarqué, Département Ingénieur)</span></p>
             <a class="qui__link" href="https://hepl-electro.wixsite.com/index" itemprop="url">Site du service électronique</a>

@@ -9,9 +9,10 @@
     <link rel="stylesheet" type="text/css" href="<?= dw_mix('css/style.css'); ?>" />
     <script type="text/javascript" src="<?= dw_mix('js/script.js'); ?>"></script>
     <meta name="description" content="Projet Antilope par Aline DE BARROS">
-    <meta name="DE BARROS Aline">
+    <meta name="author" content="DE BARROS Aline">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta accesskey=" HEPL, ISSEP, pollution, mesures, appareils, antilope, ingénieurs, écoles, électronique, dispositifs, modules, qualité, air, campagne, mobile, fixe">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content=" HEPL, ISSEP, pollution, mesures, appareils, antilope, ingénieurs, écoles, électronique, dispositifs, modules, qualité, air, campagne, mobile, fixe">
 
 </head>
 <header class="header">
@@ -39,6 +40,8 @@
                             <a href="<?= $locale['url']; ?>" lang="<?= $locale['locale']; ?>" hreflang="<?= $locale['locale']; ?>" class="nav__locale" title="<?= $locale['name']; ?>"><?= $code; ?></a>
 				        <?php endforeach; ?>
                     </div>
+                </li>
+            </ul>
     </nav>
     <form class="header__search search" role="search" method="get" action="<?= get_home_url(); ?>">
         <div class="search__container">

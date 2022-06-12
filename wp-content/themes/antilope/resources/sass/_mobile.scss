@@ -50,7 +50,7 @@
 
   /*dispositifs page*/
 
-  .dispositif__card{
+  .dispositif__card, .dispositif__cardPage{
     text-align: center;
   }
 
@@ -59,6 +59,13 @@
   }
 
   .accueil{
+    margin-left: 30%;
+  }
+
+  .dispositif__link, .dispositif__linkPage{
+    display: block;
+    max-width: 8em;
+    text-align: center;
     margin-left: 30%;
   }
 
