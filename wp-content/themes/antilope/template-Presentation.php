@@ -1,14 +1,14 @@
 <?php /* Template Name: Presentation page template */ ?>
 <?php get_header(); ?>
 
-<body>
+
 
 <main class="layout">
 
-<section class="layout__but">
+<section class="layout__but reveal">
     <h2 class="but__title"><?= __('Dans quel but ?', 'Aline-db-antilope'); ?></h2>
     <div class="but__container">
-        <p class="but__description">En 2020, nul ne peut ignorer les problèmes de pollution. Les dernières études publiées par l’OMS (Organisation Mondiale de la Santé) montrent que plus de 90% de la population mondiale est exposée à un air extérieur toxique. Cette pollution est même devenue une urgence de santé publique.  Une récente analyse montre même que 7 millions de décès prématurés surviennent chaque année à cause de la pollution de l'air. Ces statistiques en font une cause plus meurtrière que le tabagisme. L'impact des différents polluants sur de nombreuses maladies reste encore à établir, ce qui suggère que les dommages cardiaques et pulmonaires connus ne sont que "la partie émergée de l'iceberg".
+        <p class="but__description ">En 2020, nul ne peut ignorer les problèmes de pollution. Les dernières études publiées par l’OMS (Organisation Mondiale de la Santé) montrent que plus de 90% de la population mondiale est exposée à un air extérieur toxique. Cette pollution est même devenue une urgence de santé publique.  Une récente analyse montre même que 7 millions de décès prématurés surviennent chaque année à cause de la pollution de l'air. Ces statistiques en font une cause plus meurtrière que le tabagisme. L'impact des différents polluants sur de nombreuses maladies reste encore à établir, ce qui suggère que les dommages cardiaques et pulmonaires connus ne sont que "la partie émergée de l'iceberg".
             C’est dans cette optique la que nous proposons un système low-cost de mesure des polluants atmosphériques tel que les oxydes d’azote (NO&NO2), ozone (O3) et les particules fines (PM 2.5).  Ce système de mesure, appelé ANTILOPE, est basé sur une approche « low cost » et se distingue donc des autres appareils du marché.
             Différentes variantes de nos modules existent selon les modes de communication (enregistrements sur carte SD, communication Bluetooth ou rapatriement des données via GSM) et selon les types de capteurs utilisés (électrochimiques classiques ou à métal oxyde). Pour le moment, une quarantaine de modules a déjà été produit et sont en test à différents endroits de la Région Wallonne.
             Nous proposons de montrer dans cette communication, les différentes variantes de nos modules ANTILOPE ainsi que de présenter les résultats des mesures faites en environnement contrôlé (matrice de gaz) ainsi que des mesures faites en environnement extérieur que nous confronterons avec les mesures réalisées par les appareils professionnels.
@@ -29,7 +29,7 @@
     </div>
 </section>
 
-    <section class="layout__pourquoi">
+    <section class="layout__pourquoi reveal">
         <h2 class="pourquoi__title"><?= __('Pourquoi ?', 'Aline-db-antilope'); ?></h2>
         <div class="pourquoi__un">
             <div>
@@ -54,7 +54,7 @@
 
     </section>
 
-    <section class="layout__dispositifs dispositifs">
+    <section class="layout__dispositifs dispositifs reveal">
         <h2 class="dispositifs_title"><?= __('Nos dispositifs', 'Aline-db-antilope'); ?></h2>
         <div class="dispositifs__container">
 			<?php if(($dispositifs = dw_get_projects(10))->have_posts()): while($dispositifs->have_posts()): $dispositifs->the_post(); ?>
@@ -67,7 +67,7 @@
                         <figure class="dispositifs__fig">
 							<?= get_the_post_thumbnail(null, 'post-thumbnail', ['class' => 'dispositifs__thumb']); ?>
                         </figure>
-                        <a href="<?= get_the_permalink(); ?>" class="dispositif__link"><?= __('Voir le projet', 'Aline-db-antilope'); ?> <?= get_the_title(); ?> en détails</a>
+                        <a href="<?= get_the_permalink(); ?>" class="dispositif__link accueil"><?= __('Voir le projet', 'Aline-db-antilope'); ?> <?= get_the_title(); ?> en détails</a>
                     </div>
                 </article>
 			<?php endwhile; else: ?>
@@ -77,7 +77,7 @@
         <a class="dispositif__link" href="<?= get_home_url(); ?>/dispositifs"><?= __('Voir les différents dispositifs', 'Aline-db-antilope'); ?></a>
     </section>
 
-<section class="layout__qui">
+<section class="layout__qui reveal">
     <h2 class="qui__title"><?= __('Par qui ?', 'Aline-db-antilope'); ?></h2>
     <div class="qui__container" itemscope itemtype="https://schema.org/Person">
         <div class="qui__partner">
@@ -110,5 +110,5 @@
     <a class="qui__link" href="<?= get_home_url(); ?>/contact"><?= __('Contactez-les !', 'Aline-db-antilope'); ?> </a>
 </section>
 
-</body>
+
 <?php get_footer(); ?>

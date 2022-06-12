@@ -2,6 +2,7 @@
 
 <?php get_header(); ?>
 <?php if(have_posts()): while(have_posts()): the_post(); ?>
+
 	<main class="layout singleArticle">
 		<h2 class="singleArticle__title"><?= get_the_title(); ?></h2>
 		<figure class="singleArticle__fig">
@@ -10,7 +11,6 @@
 		<div class="singleArticle__content">
             </a><?=  the_content();  ?>
 		</div>
-        <a class="singleArticle__link" href="<?= get_permalink() ;?>">Lire à la source</a>
         <aside class="singleArticle__details">
             <h3 class="singleArticle__subtitle"><?= __('Détails', 'Aline-db-antilope'); ?></h3>
             <dl class="singleArticle__def">

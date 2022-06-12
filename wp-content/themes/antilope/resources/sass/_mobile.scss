@@ -3,7 +3,7 @@
 @media screen and (max-width: 767px){
 
 
-  //header
+ /*headerr*/
 
   h1{
     margin-bottom: 0.5em;
@@ -22,15 +22,21 @@
 
   .nav__locale{
     margin-right: 0.5em;
+    margin-left: 10px;
   }
 
-  //section
+  .nav__link, .header__tagline, .header__title{
+    margin-left: 10px;
+  }
+
+  /*section*/
+
   section{
     margin: 2em 10px;
   }
 
 
-  //presentation page
+  /*presentation page*/
 
   .pourquoi__un img, .pourquoi__deux img{
     max-width: 250px;
@@ -39,23 +45,41 @@
   .qui__link{
     display: block;
     max-width: 8em;
+    text-align: center;
   }
 
-  //dispositifs page
+  /*dispositifs page*/
 
   .dispositif__card{
     text-align: center;
   }
 
+  .dispositifs__container{
+    margin-left: 10%;
+  }
+
+  .accueil{
+    margin-left: 30%;
+  }
+
+
+  /*single article page*/
+  .singleArticle__content .singleArticle__link{
+    margin: 10%;
+  }
 
 
 
-  //footer
+  /*footer*/
 
   .footer__list{
     display: flex;
     justify-content: space-between;
     margin-bottom: 1.5em;
+  }
+
+  .footer__legal{
+    text-align: center;
   }
 
 

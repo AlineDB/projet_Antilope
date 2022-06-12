@@ -1,6 +1,9 @@
 <?php get_header(); ?>
 <?php if(have_posts()): while(have_posts()): the_post(); ?>
+<body>
+
     <main class="layout__singleDispositif">
+
         <h2 class="singleDispositif__title"><?= get_the_title(); ?></h2>
         <?=  the_content();  ?>
         <figure class="singleDispositif__fig">
@@ -37,6 +40,7 @@
         </aside>
     </main>
 <?php endwhile; endif; ?>
+</body>
 
 
 

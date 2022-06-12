@@ -43,6 +43,7 @@
     text-align: right;
   }
 
+
   .nav__locale, .nav__items{
     margin-right: 1em;
   }
@@ -167,14 +168,14 @@
     max-width: 150px;
   }
 
-  .dispositif__card, .articles__card{
+  .dispositif__cardPage, .articles__card{
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
 
-  .dispositif__link{
+  .dispositif__linkPage{
     margin-left: 65%;
 
   }

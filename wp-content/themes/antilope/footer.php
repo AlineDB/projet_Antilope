@@ -1,6 +1,7 @@
 <?php
 
 ?>
+
 <footer class="footer">
     <h2 class="footer__title"><?= __('Pied de page', 'Aline-db-antilope'); ?></h2>
     <div class="footer__container">

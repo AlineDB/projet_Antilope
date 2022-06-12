@@ -1,6 +1,6 @@
 <?php /* Template Name: Articles page template */ ?>
 <?php get_header(); ?>
-
+<body>
 
 	<section class="layout__articlesPage">
 		<h2 class="articles__title"><?= __('Les articles', 'Aline-db-antilope'); ?></h2>
@@ -24,7 +24,7 @@
 	</section>
 
 <div class="pages"><?php wp_pagenavi( array( 'type' => 'multipart' ) ); ?></div>
-
+</body>
 
 
 <?php get_footer(); ?>

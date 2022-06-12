@@ -8,11 +8,11 @@ Celui-ci se trouve être l'ISSEP en partenariat avec la HEPL, afin de promouvoir
 
 ## Recherche et moodboard
 
-Un premier moodboard a été créer [Voir ici](lien git)
+Un premier moodboard a été créer [Voir ici](https://github.com/AlineDB/projet_Antilope/blob/main/doc/moodboard%20antilope.xd)
 
-Suite au feedback du client, je l'ai modifié et voici le [résultat](lien git)
+Suite au feedback du client, je l'ai modifié et voici le [résultat](https://github.com/AlineDB/projet_Antilope/blob/main/doc/design%20antilope%202.xd)
 
-Pour les recherches, une première recherche concenrnat les mots-clé / articles existants / partenaires / ... a été effectué [Voir ici](lien git)
+Pour les recherches, une première recherche concenrnat les mots-clé / articles existants / partenaires / ... a été effectué [Voir ici](https://github.com/AlineDB/projet_Antilope/blob/main/doc/doc.md)
 
 
 ## Prototype / wireframe
@@ -26,7 +26,7 @@ Pour les recherches, une première recherche concenrnat les mots-clé / articles
 
 
 
-Visitez le site [Antilope Breathe](lien git)
+Visitez le site [Antilope Breathe](https://antilope.aline-db.be/fr)
 
 
 
